@@ -1,8 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
 }
-
-
+<!-- connect page with data, when db'll be ready -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,21 +11,6 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
 
-    <style>
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .container {
-            padding-top: 3%;
-            padding-bottom: 3%;
-        }
-
-        label {
-            font-size: 1.4em;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -67,49 +50,66 @@
     </nav>
 
     <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <img src="maxresdefault.jpg">
-                <h4>Caterpillar soup</h4>
-                <div class="row">
-                    <div class="col-6"><label>6 $</label></div>
-                    <div class="col-6"><button type="button" class="btn btn-success " style="display: flex; justify-content: center;">Add to Cart</button></div>
-                </div>
-            </div>
 
-            <div class="col-3">
-                <img src="cheese.jpg">
-                <h4>Casu marzu</h4>
-                <div class="row">
-                    <div class="col-6"><label>9.5 $</label></div>
-                    <div class="col-6"><button type="button" class="btn btn-success " style="display: flex; justify-content: center;">Add to Cart</button></div>
-                </div>
+        <div class="row" id="comment">
+            <div id="foodInfo" class="col-3">
+                <img id="foodImg" src="zlata.jpg">
+                <p><h2 style="text-align: center; color:darkgoldenrod;">Price:399$</h2></p>
+                <button type="button" class="btn btn-success " style="margin-left:25%;">Add to Cart</button>
             </div>
-
-            <div class="col-3">
-                <img src="D:\projecting_programming_systems\FoodTime\FoodTime\wwwroot\images\scorpioni.jpg">
-                <h4>Fried scorpions</h4>
-                <div class="row">
-                    <div class="col-6"><label>3 $</label></div>
-                    <div class="col-6"><button type="button" class="btn btn-success " style="display: flex; justify-content: center;">Add to Cart</button></div>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <img src="galushky.jpg">
-                <h4>Galushky</h4>
-                <div class="row">
-                    <div class="col-6"><label>100 $</label></div>
-                    <div class="col-6"><button type="button" class="btn btn-success " style="display: flex; justify-content: center;">Add to Cart</button></div>
-                </div>
+            <div class="col-9">
+                <h1>Food Name</h1>
+                <hr>
+                <p>Some text</p>
             </div>
         </div>
-        <hr>
+
+        <div class="row" id=comment>
+            <form name="test" method="post" action="" class="col-12">
+                <p>
+                    Comments:<Br>
+                    <textarea name="comment" cols="40" rows="3" class="  form-control"></textarea>
+                </p>
+                <p><input type="submit" class="btn btn-outline-primary " class="" value="Send" style="float:right;">
+            </form>
+        </div>
+
+        <div class="row border border-secondary rounded" id="comment">
+            <div class="col-8">
+
+                <a href="" style="color: #b34700; font-weight:bold;">author</a>
+            </div>
+            <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
+            <div class="col-12">
+                <p>Comment Text	</p>
+
+            </div>
+
+        </div>
+        <div class="row border border-secondary rounded" id="comment">
+            <div class="col-8">
+
+                <a href="" style="color: #b34700; font-weight:bold;">author</a>
+            </div>
+            <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
+            <div class="col-12">
+                <p>Comment Text	</p>
+
+            </div>
+
+        </div>
+        <div class="row border border-secondary rounded" id="comment">
+            <div class="col-8">
+
+                <a href="" style="color: #b34700; font-weight:bold;">author</a>
+            </div>
+            <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
+            <div class="col-12">
+                <p>Comment Text	</p>
+
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
-<div >
-    <h1>It's Okay, Baby!</h1>
-</div>
-<a href="@Url.Action("FoodDetail","Food")" class="elements">FoodDetail</a>
-
