@@ -12,5 +12,10 @@ namespace FoodTime.Models
         public string Componets { get; set; }
         public int Weight { get; set; }
         public double Price { get; set; }
+
+        public Food()
+        {
+
+        }
     }
 }
