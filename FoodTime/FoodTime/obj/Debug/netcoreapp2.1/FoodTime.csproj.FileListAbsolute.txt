@@ -21,3 +21,4 @@ E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.Views.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
+E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\FoodDetail\FoodDetail.g.cshtml.cs
