@@ -21,7 +21,6 @@ E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.Views.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
-
 D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.deps.json
 D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.runtimeconfig.json
 D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.runtimeconfig.dev.json
@@ -45,6 +44,29 @@ D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Food
 D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
 D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
-
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\FoodDetail\FoodDetail.g.cshtml.cs
-
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.deps.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.runtimeconfig.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.runtimeconfig.dev.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csprojAssemblyReference.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CoreCompileInputs.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfoInputs.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfo.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.input.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.output.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorCoreGenerate.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Food\FoodDetail.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorTargetAssemblyInfo.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorTargetAssemblyInfo.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.Views.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Entrance\SignIn.g.cshtml.cs
