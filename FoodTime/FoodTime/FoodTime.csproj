@@ -2,22 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-FoodTime-A008C036-0394-4387-8762-5247BC8B3DDE</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Home\NewFolder\**" />
-    <Content Remove="Views\Home\NewFolder\**" />
-    <EmbeddedResource Remove="Views\Home\NewFolder\**" />
-    <None Remove="Views\Home\NewFolder\**" />
+    <Compile Remove="Controllers\UserController.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\css\" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
