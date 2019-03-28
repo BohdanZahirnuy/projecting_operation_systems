@@ -7,6 +7,7 @@ namespace FoodTime.Models
 {
     public class Comment
     {
+        public int Id { get; set; }
         public string Content { get; set; }
         public string DishId { get; set; }
         public string Owner { get; set; }
