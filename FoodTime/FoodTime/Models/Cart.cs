@@ -7,7 +7,7 @@ namespace FoodTime.Models
 {
     public class Cart
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public List<Order> OrderList { get; set; }
         public DateTime Date { get; set; }
 

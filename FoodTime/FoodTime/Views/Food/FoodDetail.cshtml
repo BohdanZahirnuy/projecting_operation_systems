@@ -1,4 +1,7 @@
-﻿@{
+﻿@model FoodTime.Models.Food
+
+@{
+    Layout = null;
 }
 <!-- connect page with data, when db'll be ready -->
 <!DOCTYPE html>
@@ -54,13 +57,14 @@
         <div class="row" id="comment">
             <div id="foodInfo" class="col-3">
                 <img id="foodImg" src="zlata.jpg">
-                <p><h2 style="text-align: center; color:darkgoldenrod;">Price:399$</h2></p>
+                <p><h2 style="text-align: center; color:darkgoldenrod;">Price:@Model.Price</h2></p>
                 <button type="button" class="btn btn-success " style="margin-left:25%;">Add to Cart</button>
             </div>
             <div class="col-9">
-                <h1>Food Name</h1>
+                <h1>@Model.Name</h1>
                 <hr>
-                <p>Some text</p>
+                <p>@Model.Componets</p>
+                <p>@Model.Weight</p>
             </div>
         </div>
 
