@@ -45,7 +45,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\pro
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CoreCompileInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cs
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfoInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfo.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.input.cache
@@ -71,3 +70,11 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\pro
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
