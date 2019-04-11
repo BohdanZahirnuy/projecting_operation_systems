@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodTime.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190328224720_mgr")]
-    partial class mgr
+    [Migration("20190411115919_migr")]
+    partial class migr
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
