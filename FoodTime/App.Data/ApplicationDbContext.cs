@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FoodTime.Data
+namespace AppData
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -13,9 +13,9 @@ namespace FoodTime.Data
         {
         }
        
-        public DbSet<FoodTime.Models.Comment> Comment{ get; set; }
-        public DbSet<FoodTime.Models.Pizza> Pizza { get; set; }
-        public DbSet<FoodTime.Models.Sushi> Sushi { get; set; }
+        public DbSet<AppData.Models.Comment> Comment{ get; set; }
+        public DbSet<AppData.Models.Pizza> Pizza { get; set; }
+        public DbSet<AppData.Models.Sushi> Sushi { get; set; }
 
 
     }

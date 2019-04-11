@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTime", "FoodTime\FoodTime.csproj", "{5CD5107D-8291-45DF-94B0-094CD7B2A7D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime", "FoodTime\FoodTime.csproj", "{5CD5107D-8291-45DF-94B0-094CD7B2A7D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppData", "App.Data\AppData.csproj", "{BFA12519-B3A3-4950-9410-52625293B1D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{27EB430A-CA50-4C89-96B1-3C74BEA41B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5CD5107D-8291-45DF-94B0-094CD7B2A7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD5107D-8291-45DF-94B0-094CD7B2A7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD5107D-8291-45DF-94B0-094CD7B2A7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA12519-B3A3-4950-9410-52625293B1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA12519-B3A3-4950-9410-52625293B1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA12519-B3A3-4950-9410-52625293B1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA12519-B3A3-4950-9410-52625293B1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EB430A-CA50-4C89-96B1-3C74BEA41B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EB430A-CA50-4C89-96B1-3C74BEA41B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EB430A-CA50-4C89-96B1-3C74BEA41B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EB430A-CA50-4C89-96B1-3C74BEA41B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

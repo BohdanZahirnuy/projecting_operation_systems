@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FoodTime.Models
+namespace AppData.Models
 {
-    public class Sushi: Food
+    public class Pizza: Food
     {
-        public string SubCategory { get; set; }
+        public int Diameter { get; set; }
 
-        public Sushi()
+        public Pizza()
         {
             base.Name = "No data";
             base.Componets = "No data";
             base.Weight = 0;
-            base.Category = "Sushi";
+            base.Category = "Pizza";
             base.Price = 0.0;
-            SubCategory = "No data";
+            Diameter = 0;
         }
     }
 }
