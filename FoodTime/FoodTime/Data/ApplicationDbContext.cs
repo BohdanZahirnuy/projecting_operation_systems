@@ -13,7 +13,6 @@ namespace FoodTime.Data
         {
         }
        
-        public DbSet<FoodTime.Models.User> User { get; set; }
         public DbSet<FoodTime.Models.Comment> Comment{ get; set; }
         public DbSet<FoodTime.Models.Pizza> Pizza { get; set; }
         public DbSet<FoodTime.Models.Sushi> Sushi { get; set; }

@@ -51,7 +51,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\pro
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.output.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorCoreGenerate.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Entrance\SignIn.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Food\FoodDetail.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs

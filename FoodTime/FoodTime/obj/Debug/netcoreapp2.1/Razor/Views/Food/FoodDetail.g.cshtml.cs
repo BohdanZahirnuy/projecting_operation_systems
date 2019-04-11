@@ -61,7 +61,7 @@ using FoodTime.Models;
             WriteLiteral("<!-- connect page with data, when db\'ll be ready -->\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(86, 912, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d88ea7d979b748c099e07ad24440a145", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "800ac45a9d6d4f6eab354e18f8428c35", async() => {
                 BeginContext(92, 899, true);
                 WriteLiteral(@"
     <link rel=""stylesheet"" href=""https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"" integrity=""sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"" crossorigin=""anonymous"">
@@ -89,7 +89,7 @@ using FoodTime.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1000, 4439, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b66f3b3ab02d4c459a01c32bdecc4dc1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "733577cc99d94b53a9dd49cc37de5e70", async() => {
                 BeginContext(1006, 1679, true);
                 WriteLiteral(@"
     <nav class=""navbar navbar-expand-lg navbar-light bg-light"">
@@ -125,7 +125,7 @@ using FoodTime.Models;
             ");
                 EndContext();
                 BeginContext(2685, 269, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05a3cd2d5d3c407c88e22349a2a227a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a4b0bfb760549519841fe51609db851", async() => {
                     BeginContext(2724, 223, true);
                     WriteLiteral("\r\n                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\r\n                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n            ");
                     EndContext();
@@ -168,7 +168,7 @@ using FoodTime.Models;
             ");
                 EndContext();
                 BeginContext(3592, 374, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34a43a84912542c9ae108ec979912117", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f211513b1f6a46beb99ef01c2403f8ef", async() => {
                     BeginContext(3649, 310, true);
                     WriteLiteral(@"
                 <p>

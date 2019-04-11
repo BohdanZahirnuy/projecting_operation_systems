@@ -21,11 +21,11 @@ namespace FoodTime.Models
             Date = new DateTime();
         }
 
-        public Comment(string _content, Food dish, User usr, DateTime _date)
+        public Comment(string _content, Food dish,  DateTime _date)
         {
             Content = _content;
             DishId = dish.Name;
-            Owner = usr.Username;
+           
             Date = _date;
         }
     }
