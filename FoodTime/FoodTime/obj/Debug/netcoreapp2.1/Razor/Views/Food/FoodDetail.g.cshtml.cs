@@ -67,7 +67,7 @@ using FoodTime.Models;
             WriteLiteral("\r\n\r\n\r\n    <div class=\"row\" id=\"comment\">\r\n        <div id=\"foodInfo\" class=\"col-3\">\r\n            ");
             EndContext();
             BeginContext(143, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7368560d0c5740148a6203a16372ecfd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "bb36db33853d41dfa392d5d274625258", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -98,7 +98,7 @@ using FoodTime.Models;
         ");
             EndContext();
             BeginContext(580, 341, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c12dc73b2e64bf68b8a0c9195c0fa04", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a97f9b334fc4cca93489b540244fc06", async() => {
                 BeginContext(637, 277, true);
                 WriteLiteral(@"
             <p>
