@@ -30,3 +30,14 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.AssemblyInfo.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.pdb
+E:\studing\PPS\FoodTime\App.Data\bin\Debug\netcoreapp2.1\AppData.deps.json
+E:\studing\PPS\FoodTime\App.Data\bin\Debug\netcoreapp2.1\AppData.runtimeconfig.json
+E:\studing\PPS\FoodTime\App.Data\bin\Debug\netcoreapp2.1\AppData.runtimeconfig.dev.json
+E:\studing\PPS\FoodTime\App.Data\bin\Debug\netcoreapp2.1\AppData.dll
+E:\studing\PPS\FoodTime\App.Data\bin\Debug\netcoreapp2.1\AppData.pdb
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.csprojAssemblyReference.cache
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.csproj.CoreCompileInputs.cache
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.AssemblyInfoInputs.cache
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.AssemblyInfo.cs
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.dll
+E:\studing\PPS\FoodTime\App.Data\obj\Debug\netcoreapp2.1\AppData.pdb

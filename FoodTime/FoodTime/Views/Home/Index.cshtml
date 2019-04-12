@@ -2,37 +2,42 @@
     ViewData["Title"] = "Home";
 }
 
-    <div class="row">
-        <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+<div class="row">
+    
             <div class="col-3">
                 <img src="~/images/cheese.jpg">
-                <h4>Casu marzu</h4>
+                <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+                    <h4>Casu marzu</h4>
+                </a>
                 <div class="row">
                     <div class="col-6"><label>9.5 $</label></div>
                     <div class="col-6"><input type="button" class="btn btn-success " style="display: flex; justify-content: center;" value="Add to Cart"></div>
                 </div>
-            </div>
-        </a>
-        <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+            </div> 
+        
             <div class="col-3">
                 <img src="~/images/scorpioni.jpg">
-                <h4>Fried scorpions</h4>
+                <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+                    <h4>Fried scorpions</h4>
+                </a>
+                
                 <div class="row">
                     <div class="col-6"><label>3 $</label></div>
                     <div class="col-6"><input type="button" class="btn btn-success " style="display: flex; justify-content: center;" value="Add to Cart"></div>
                 </div>
             </div>
-        </a>
-        <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+             
             <div class="col-3">
                 <img src="~/images/galushky.jpg">
-                <h4>Galushky</h4>
+                <a asp-area="" asp-controller="Food" asp-action="FoodDetail">
+                    <h4>Galushky</h4>
+                </a>
+                
                 <div class="row">
                     <div class="col-6"><label>100 $</label></div>
                     <div class="col-6"><input type="button" class="btn btn-success " style="display: flex; justify-content: center;" value="Add to Cart"></div>
                 </div>
             </div>
-        </a>
     </div>
 
 
