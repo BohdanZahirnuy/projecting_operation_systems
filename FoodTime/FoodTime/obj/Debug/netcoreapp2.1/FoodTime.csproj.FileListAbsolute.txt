@@ -170,8 +170,6 @@ E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.dll
 E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.pdb
 E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.dll
 E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.pdb
-E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\AppData.dll
-E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\AppData.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csprojAssemblyReference.cache
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CoreCompileInputs.cache
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cache
@@ -210,3 +208,5 @@ E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb

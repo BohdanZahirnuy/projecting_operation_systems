@@ -9,3 +9,14 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.pdb
+E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.deps.json
+E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.json
+E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.dev.json
+E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csprojAssemblyReference.cache
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csproj.CoreCompileInputs.cache
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfoInputs.cache
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfo.cs
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.dll
+E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.pdb
