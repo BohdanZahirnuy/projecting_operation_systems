@@ -13,20 +13,5 @@ namespace FoodTime.Data.Models
         public string Owner { get; set; }
         public DateTime Date { get; set; }
 
-        public Comment()
-        {
-            Content = "";
-            DishId = "";
-            Owner = "";
-            Date = new DateTime();
-        }
-
-        public Comment(string _content, Food dish,  DateTime _date)
-        {
-            Content = _content;
-            DishId = dish.Name;
-           
-            Date = _date;
-        }
     }
 }
