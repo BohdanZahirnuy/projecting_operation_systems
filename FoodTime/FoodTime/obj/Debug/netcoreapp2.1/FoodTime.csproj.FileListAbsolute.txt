@@ -136,8 +136,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Views.pdb
-C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\AppData.dll
-C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\AppData.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.input.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.TagHelpers.output.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorCoreGenerate.cache
@@ -210,3 +208,5 @@ E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.Views.pdb
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CopyComplete
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb

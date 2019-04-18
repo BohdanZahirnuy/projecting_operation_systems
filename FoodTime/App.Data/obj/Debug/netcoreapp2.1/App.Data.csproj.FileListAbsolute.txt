@@ -1,5 +1,0 @@
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\App.Data\bin\Debug\netcoreapp2.1\App.Data.deps.json
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\App.Data\bin\Debug\netcoreapp2.1\App.Data.dll
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\App.Data.csproj.CoreCompileInputs.cache
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\App.Data.AssemblyInfoInputs.cache
-C:\Users\Bodya Zahirnuy\Documents\GitHub\web_programming_and_support_subject\projecting_programming_systems\FoodTime\App.Data\obj\Debug\netcoreapp2.1\App.Data.AssemblyInfo.cs
