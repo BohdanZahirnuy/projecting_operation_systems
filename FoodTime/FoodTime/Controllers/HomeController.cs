@@ -17,7 +17,7 @@ namespace FoodTime.Controllers
         {
             IEnumerable<Food> foods =  db.Food;
             ViewBag.Foods = foods;
-            return View();
+            return View("Index");
         }
     }
 }

@@ -20,3 +20,14 @@ E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.Asse
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfo.cs
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.dll
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.pdb
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.deps.json
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.json
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.dev.json
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfo.cs
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.dll
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.pdb
