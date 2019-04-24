@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime.Data", "FoodTime.Data\FoodTime.Data.csproj", "{43FC0B2A-AAF3-46B2-88CA-B81293B9F665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTime.Test", "FoodTime.Test\FoodTime.Test.csproj", "{24529B22-C96F-4474-B423-BA2A270581E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime.Test", "FoodTime.Test\FoodTime.Test.csproj", "{24529B22-C96F-4474-B423-BA2A270581E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6167,6 +6167,7 @@
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6337,6 +6338,7 @@
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6352,6 +6354,7 @@
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6367,6 +6370,7 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -8381,6 +8385,7 @@
       "path": "system.linq.queryable/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -11119,23 +11124,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\yato\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "projectUniqueName": "E:\\studing\\PPS\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
       "projectName": "FoodTime.Test",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\obj\\",
+      "projectPath": "E:\\studing\\PPS\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "packagesPath": "C:\\Users\\yato\\.nuget\\packages\\",
+      "outputPath": "E:\\studing\\PPS\\FoodTime\\FoodTime.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yato\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11148,8 +11153,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj"
+            "E:\\studing\\PPS\\FoodTime\\FoodTime\\FoodTime.csproj": {
+              "projectPath": "E:\\studing\\PPS\\FoodTime\\FoodTime\\FoodTime.csproj"
             }
           }
         }
