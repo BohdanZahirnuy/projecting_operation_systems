@@ -13,14 +13,5 @@ namespace Services.Dto
         public string DishId { get; set; }
         public string Owner { get; set; }
         public DateTime Date { get; set; }
-
-        public CommentDto(Comment obj)
-        {
-            this.Id = obj.Id;
-            this.Content = obj.Content;
-            this.DishId = obj.DishId;
-            this.Owner = obj.Owner;
-            this.Date = obj.Date;
-        }
     }
 }

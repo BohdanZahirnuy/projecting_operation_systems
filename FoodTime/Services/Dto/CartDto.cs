@@ -12,11 +12,5 @@ namespace Services.Dto
         public List<Order> OrderList { get; set; }
         public DateTime Date { get; set; }
 
-        public CartDto(Cart obj)
-        {
-            this.ID = obj.ID;
-            this.OrderList = obj.OrderList;
-            this.Date = obj.Date;
-        }
     }
 }

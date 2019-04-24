@@ -6,5 +6,6 @@ namespace Services.Filters
 {
     class OrderFilter
     {
+        public int Id { get; set; }
     }
 }

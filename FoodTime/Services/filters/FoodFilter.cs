@@ -4,10 +4,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Services.filters
+namespace Services.Filters
 {
     class FoodFilter
     {
-        
+        public int Id { get; set; }
     }
 }

@@ -15,16 +15,6 @@ namespace Services.Dto
         public int Weight { get; set; }
         public double Price { get; set; }
         public string ExtraInfo { get; set; }
-
-        public FoodDto(Food obj)
-        {
-            this.Id = obj.Id;
-            this.Name = obj.Name;
-            this.Category = obj.Category;
-            this.Componets = obj.Componets;
-            this.Weight = obj.Weight;
-            this.Price = obj.Price;
-            this.ExtraInfo = obj.ExtraInfo;
-        }
+        
     }
 }
