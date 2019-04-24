@@ -11119,23 +11119,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Zlatilda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "projectUniqueName": "D:\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
       "projectName": "FoodTime.Test",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\obj\\",
+      "projectPath": "D:\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "packagesPath": "C:\\Users\\Zlatilda\\.nuget\\packages\\",
+      "outputPath": "D:\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zlatilda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11148,8 +11144,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj"
+            "D:\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj": {
+              "projectPath": "D:\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj"
             }
           }
         }

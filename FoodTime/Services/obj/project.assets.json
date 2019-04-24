@@ -688,23 +688,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Zlatilda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\Services\\obj\\",
+      "projectPath": "D:\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Zlatilda\\.nuget\\packages\\",
+      "outputPath": "D:\\projecting_programming_systems\\FoodTime\\Services\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zlatilda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
