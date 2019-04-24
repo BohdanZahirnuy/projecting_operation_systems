@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Services.filters
 {
-    public class FoodFilter
+    class FoodFilter
     {
         
     }

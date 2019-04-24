@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FoodTime.Data.Models;
 
-namespace FoodTime.Dto
+namespace Services.Dto
 {
     public class FoodDto
     {
