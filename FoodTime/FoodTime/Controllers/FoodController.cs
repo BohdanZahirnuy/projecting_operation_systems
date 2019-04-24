@@ -4,13 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using FoodTime.Models;
 using Microsoft.AspNetCore.Mvc;
-
+using FoodTime.Data;
 
 namespace FoodTime.Controllers
 {
     public class FoodController : Controller
     {
-     
+
         public IActionResult FoodDetail()
         {
             //uncomment when db'll be ready
@@ -18,5 +18,6 @@ namespace FoodTime.Controllers
             //return View(food);
             return View();
         }
+
     }
 }

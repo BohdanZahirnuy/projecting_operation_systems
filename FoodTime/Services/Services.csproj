@@ -5,12 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+
     <Folder Include="Dto\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FoodTime.Data\FoodTime.Data.csproj" />
+
   </ItemGroup>
 
 </Project>

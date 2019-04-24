@@ -4517,23 +4517,25 @@
     ]
   },
   "packageFolders": {
+
     "C:\\Users\\yato\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+
       "projectUniqueName": "E:\\studing\\PPS\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
       "projectName": "FoodTime.Data",
       "projectPath": "E:\\studing\\PPS\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
       "packagesPath": "C:\\Users\\yato\\.nuget\\packages\\",
       "outputPath": "E:\\studing\\PPS\\FoodTime\\FoodTime.Data\\obj\\",
+
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\yato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
