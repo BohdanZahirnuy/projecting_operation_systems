@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using FoodTime.Models;
 using Microsoft.AspNetCore.Mvc;
-using FoodTime.DTO;
 using FoodTime.Data;
 
 namespace FoodTime.Controllers
@@ -18,24 +17,6 @@ namespace FoodTime.Controllers
             //var food = db.Food.SingleOrDefault(x => x.Id == id);
             //return View(food);
             return View();
-        }
-
-        public IQueryable<FoodDTO> GetFood()
-        {
-            FoodContext db = new FoodContext();
-            var foods = from b in db.Food
-                        select new FoodDTO()
-                        {
-                            Id = b.Id,
-                            Name = b.Name,
-                            Category = b.Category,
-                            Componets = b.Componets,
-                            Weight = b.Weight,
-                            Price = b.Price,
-                            ExtraInfo = b.ExtraInfo,
-                        };
-
-            return foods;
         }
 
     }
