@@ -11124,23 +11124,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
       "projectName": "FoodTime.Test",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\obj\\",
+      "projectPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\FoodTime.Test.csproj",
+      "packagesPath": "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bodya Zahirnuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11153,8 +11153,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj"
+            "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj": {
+              "projectPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj"
             }
           }
         }

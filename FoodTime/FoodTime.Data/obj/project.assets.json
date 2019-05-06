@@ -4517,23 +4517,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
       "projectName": "FoodTime.Data",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\obj\\",
+      "projectPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj",
+      "packagesPath": "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bodya Zahirnuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
