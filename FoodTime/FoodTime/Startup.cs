@@ -12,6 +12,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FoodTime.Data;
+using FoodTime.Data.Interfaces;
+using FoodTime.Data.Implementation;
+using FoodTime.Data.Models;
+using Services.Interfaces;
+using Services.Implementation;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace FoodTime
 {
@@ -41,6 +47,15 @@ namespace FoodTime
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddScoped<IRepository<Food>, Repository<Food>>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            // Add application services.
+            services.AddTransient<IFoodService, FoodService>();
+          
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

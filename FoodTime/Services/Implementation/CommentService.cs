@@ -5,13 +5,12 @@ using FoodTime.Data.Models;
 using FoodTime.Data.Interfaces;
 using Services.Interfaces;
 using Services.Dto;
-using Services.Filters;
 using System.Data;
 using System.Linq;
 
 namespace Services.Implementation
 {
-    public  class CommentService : Service<Comment, CommentDto, CommentFilter>, ICommentService
+    public  class CommentService : Service<Comment, CommentDto>, ICommentService
     {
         public CommentService(IUnitOfWork unitOfWork) :
         base(unitOfWork)
@@ -67,11 +66,11 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
-        public override IEnumerable<CommentDto> Get(CommentFilter filter)
+        public override IEnumerable<CommentDto> Get()
         {
-            Func<Comment, bool> predicate = GetFilter(filter);
+            
             List<Comment> entities = Repository
-              .Get(p => predicate(p))
+              .Get()
               .ToList();
 
             if (!entities.Any())
@@ -130,15 +129,6 @@ namespace Services.Implementation
             Repository.Update(entity);
             _unitOfWork.SaveChanges();
         }
-        private Func<Comment, bool> GetFilter(CommentFilter filter)
-        {
-            Func<Comment, bool> result = e => true;
-            if (!String.IsNullOrEmpty(filter?.Id.ToString()))
-            {
-                result += e => e.Id == filter.Id;
-            }
-
-            return result;
-        }
+      
     }
 }

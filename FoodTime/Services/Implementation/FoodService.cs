@@ -5,13 +5,12 @@ using FoodTime.Data.Models;
 using FoodTime.Data.Interfaces;
 using Services.Interfaces;
 using Services.Dto;
-using Services.Filters;
 using System.Data;
 using System.Linq;
 
 namespace Services.Implementation
 {
-    public  class FoodService : Service<Food, FoodDto, FoodFilter>, IFoodService
+    public  class FoodService : Service<Food, FoodDto>, IFoodService
     {
         public FoodService(IUnitOfWork unitOfWork) :
           base(unitOfWork)
@@ -71,11 +70,10 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
-        public override IEnumerable<FoodDto> Get(FoodFilter filter)
+        public  override IEnumerable<FoodDto> Get()
         {
-            Func<Food, bool> predicate = GetFilter(filter);
             List<Food> entities = Repository
-              .Get(p => predicate(p))
+              .Get()
               .ToList();
 
             if (!entities.Any())
@@ -135,15 +133,6 @@ namespace Services.Implementation
             Repository.Update(entity);
             _unitOfWork.SaveChanges();
         }
-        private Func<Food, bool> GetFilter(FoodFilter filter)
-        {
-            Func<Food, bool> result = e => true;
-            if (!String.IsNullOrEmpty(filter?.Id.ToString()))
-            {
-                result += e => e.Id == filter.Id;
-            }
-
-            return result;
-        }
+       
     }
 }

@@ -6,7 +6,7 @@ using FoodTime.Data.Interfaces;
 
 namespace Services.Implementation
 {
-    public abstract class Service<TEntity, TDto, TFilter> : IService<TDto, TFilter>
+    public abstract class Service<TEntity, TDto> : IService<TDto>
         where TEntity:class
         where TDto:class
     {
@@ -23,7 +23,7 @@ namespace Services.Implementation
         protected IRepository<TEntity> Repository => _unitOfWork.GetRepository<TEntity>();
 
         public abstract TDto Get(string id);
-        public abstract IEnumerable<TDto> Get(TFilter filter);
+        public abstract IEnumerable<TDto> Get();
         public abstract void Add(TDto dto);
         public abstract void Remove(string id);
         public abstract void Update(TDto dto);

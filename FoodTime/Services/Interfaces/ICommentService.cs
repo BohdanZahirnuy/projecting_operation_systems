@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Services.Dto;
-using Services.Filters;
-
 namespace Services.Interfaces
 {
-    public interface ICommentService : IService<CommentDto, CommentFilter>
+    public interface ICommentService : IService<CommentDto>
     {
 
     }

@@ -124,7 +124,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.csproj.CoreCompileInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.RazorAssemblyInfo.cs
-C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfoInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.AssemblyInfo.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\FoodTime.dll
@@ -261,3 +260,4 @@ E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.dll
 E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

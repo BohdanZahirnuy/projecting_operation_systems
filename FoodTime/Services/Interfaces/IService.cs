@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using Services.Dto;
-using Services.Filters;
 
 
 namespace Services.Interfaces
 {
-    public interface IService<TDto, TFilter>
+    public interface IService<TDto>
     {
         TDto Get(string id);
-        IEnumerable<TDto> Get(TFilter filter);
+        IEnumerable<TDto> Get();
         void Add(TDto dto);
         void Remove(string id);
         void Update(TDto dto);
