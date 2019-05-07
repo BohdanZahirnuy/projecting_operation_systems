@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace Services.Implementation
 {
-    class CommentService: Service<Comment, CommentDto, CommentFilter>, ICommentService
+    public  class CommentService : Service<Comment, CommentDto, CommentFilter>, ICommentService
     {
         public CommentService(IUnitOfWork unitOfWork) :
         base(unitOfWork)

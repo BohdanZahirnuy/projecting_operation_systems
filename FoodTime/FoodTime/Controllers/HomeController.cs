@@ -5,19 +5,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using FoodTime.Models;
-using FoodTime.Data;
-using FoodTime.Data.Models;
+using Services.Dto;
+using Services.Implementation;
+using Services.Interfaces;  
 
 namespace FoodTime.Controllers
 {
     public class HomeController : Controller
     {
-        FoodContext db = new FoodContext();
+       /* IFoodService foodService;
+        public HomeController(IFoodService serv)
+        {
+            foodService = serv;
+        }*/
         public IActionResult Index()
         {
-            IEnumerable<Food> foods =  db.Food;
-            ViewBag.Foods = foods;
-            return View("Index");
+            // IEnumerable<FoodDto> foodDtos = foodService.Get("");
+            return  View("Index");
+
         }
+
+
     }
 }

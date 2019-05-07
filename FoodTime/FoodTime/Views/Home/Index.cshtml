@@ -5,19 +5,18 @@
 @model IEnumerable<FoodTime.Data.Models.Food>
 
 <div class="row">
-    @foreach (var food in ViewBag.Foods)
-    {
-        <div class="col-3">
-            <img src="~/images/cheese.jpg">
-            <a href="Home/FoodDetail/@food.Id">
-                <h4>@food.Name</h4>
-            </a>
-            <div class="row">
-                <div class="col-6"><label>@food.Price $</label></div>
-                <div class="col-6"><input type="button" class="btn btn-success " style="display: flex; justify-content: center;" value="Add to Cart"></div>
-            </div>
-        </div>
-    }
+    
+         <div class="col-3">
+             <img src="~/images/cheese.jpg">
+             <a href="Home/FoodDetail/">
+                 <h4>Name</h4>
+             </a>
+             <div class="row">
+                 <div class="col-6"><label>312</label></div>
+                 <div class="col-6"><input type="button" class="btn btn-success " style="display: flex; justify-content: center;" value="Add to Cart"></div>
+             </div>
+         </div>
+         
 
 </div>
 

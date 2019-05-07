@@ -6,7 +6,7 @@ using Services.Filters;
 
 namespace Services.Interfaces
 {
-    interface IFoodService: IService<FoodDto, FoodFilter>
+    public interface IFoodService : IService<FoodDto, FoodFilter>
     {
 
     }

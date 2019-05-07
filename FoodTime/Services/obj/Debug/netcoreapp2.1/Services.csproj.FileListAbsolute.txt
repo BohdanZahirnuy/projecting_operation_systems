@@ -41,3 +41,15 @@ D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Serv
 D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.dll
 D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.pdb
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.dll
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.pdb
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.dll
+E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.pdb

@@ -4,9 +4,10 @@ using System.Text;
 using Services.Dto;
 using Services.Filters;
 
+
 namespace Services.Interfaces
 {
-    interface IService<TDto, TFilter>
+    public interface IService<TDto, TFilter>
     {
         TDto Get(string id);
         IEnumerable<TDto> Get(TFilter filter);

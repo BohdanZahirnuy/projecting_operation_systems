@@ -6,8 +6,7 @@ using Services.Filters;
 
 namespace Services.Interfaces
 {
-    interface IOrderService:IService<OrderDto, OrderFilter>
+    public interface IOrderService: IService<OrderDto, OrderFilter>
     {
-
     }
 }

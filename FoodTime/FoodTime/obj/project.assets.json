@@ -4630,6 +4630,19 @@
         "runtime": {
           "bin/placeholder/FoodTime.Data.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "FoodTime.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -12542,35 +12555,40 @@
       "type": "project",
       "path": "../FoodTime.Data/FoodTime.Data.csproj",
       "msbuildProject": "../FoodTime.Data/FoodTime.Data.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "FoodTime.Data >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\": {},
+    "C:\\Users\\yato\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj",
+      "projectUniqueName": "E:\\studing\\PPS\\FoodTime\\FoodTime\\FoodTime.csproj",
       "projectName": "FoodTime",
-      "projectPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\FoodTime.csproj",
-      "packagesPath": "C:\\Users\\Bodya Zahirnuy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime\\obj\\",
+      "projectPath": "E:\\studing\\PPS\\FoodTime\\FoodTime\\FoodTime.csproj",
+      "packagesPath": "C:\\Users\\yato\\.nuget\\packages\\",
+      "outputPath": "E:\\studing\\PPS\\FoodTime\\FoodTime\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bodya Zahirnuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yato\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12583,8 +12601,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj": {
-              "projectPath": "C:\\Users\\Bodya Zahirnuy\\Documents\\GitHub\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj"
+            "E:\\studing\\PPS\\FoodTime\\Services\\Services.csproj": {
+              "projectPath": "E:\\studing\\PPS\\FoodTime\\Services\\Services.csproj"
             }
           }
         }

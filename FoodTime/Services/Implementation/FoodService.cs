@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace Services.Implementation
 {
-    class FoodService: Service<Food, FoodDto, FoodFilter>, IFoodService
+    public  class FoodService : Service<Food, FoodDto, FoodFilter>, IFoodService
     {
         public FoodService(IUnitOfWork unitOfWork) :
           base(unitOfWork)

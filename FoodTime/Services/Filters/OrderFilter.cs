@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Services.Filters
 {
-    class OrderFilter
+    public class OrderFilter
     {
         public int Id { get; set; }
     }

@@ -6,8 +6,8 @@ using Services.Dto;
 
 namespace Services.Interfaces
 {
-    interface ICartService: IService<CartDto, CartFilter>
+    public interface ICartService : IService<CartDto, CartFilter>
     {
-
+        
     }
 }

@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace Services.Implementation
 {
-    class CartService: Service<Cart, CartDto, CartFilter>, ICartService
+    public class CartService : Service<Cart, CartDto, CartFilter>, ICartService
     {
         public CartService(IUnitOfWork unitOfWork) :
              base(unitOfWork)

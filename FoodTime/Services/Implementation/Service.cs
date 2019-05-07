@@ -6,7 +6,7 @@ using FoodTime.Data.Interfaces;
 
 namespace Services.Implementation
 {
-    abstract class Service<TEntity, TDto, TFilter> : IService<TDto, TFilter>
+    public abstract class Service<TEntity, TDto, TFilter> : IService<TDto, TFilter>
         where TEntity:class
         where TDto:class
     {

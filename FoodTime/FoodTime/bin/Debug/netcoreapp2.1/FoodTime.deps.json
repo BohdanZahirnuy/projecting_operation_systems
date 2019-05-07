@@ -24,11 +24,11 @@
     ".NETCoreApp,Version=v2.1": {
       "FoodTime/1.0.0": {
         "dependencies": {
-          "FoodTime.Data": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "Services": "1.0.0"
         },
         "runtime": {
           "FoodTime.dll": {}
@@ -651,6 +651,17 @@
         },
         "compile": {
           "FoodTime.Data.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "FoodTime.Data": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        },
+        "compile": {
+          "Services.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3761,6 +3772,11 @@
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
     "FoodTime.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

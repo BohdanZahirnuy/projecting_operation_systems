@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace Services.Implementation
 {
-    class OrderService: Service<Order, OrderDto, OrderFilter>, IOrderService
+    public class OrderService : Service<Order, OrderDto, OrderFilter>, IOrderService
     {
         public OrderService(IUnitOfWork unitOfWork) :
            base(unitOfWork)
@@ -54,7 +54,6 @@ namespace Services.Implementation
 
             return entity;
         }
-
         public override OrderDto Get(string id)
         {
             Order entity = Repository

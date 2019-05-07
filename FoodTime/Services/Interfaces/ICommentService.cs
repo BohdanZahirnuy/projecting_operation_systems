@@ -6,7 +6,7 @@ using Services.Filters;
 
 namespace Services.Interfaces
 {
-    interface ICommentService: IService<CommentDto, CommentFilter>
+    public interface ICommentService : IService<CommentDto, CommentFilter>
     {
 
     }
