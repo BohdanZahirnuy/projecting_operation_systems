@@ -25,14 +25,10 @@ C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.dll
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.pdb
-D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Views.dll
-D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Views.pdb
 D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.deps.json
 D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.dll
 D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Services.pdb
 D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
-D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.dll
-D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.pdb
 D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
 D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
 D:\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache

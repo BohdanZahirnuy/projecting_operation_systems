@@ -51,3 +51,26 @@ label {
 #comment {
     margin-top: 1%;
 }
+
+#dish {
+    padding-bottom: 2%;
+    height: 97%;
+    margin-bottom: 2%;
+    outline-offset: 30px;
+}
+
+#cart{height: 25px; width: auto; margin-top:5%; margin-left:20%;}
+
+#add_to_cart_btn {
+    color: darkred;
+    border: #c63929 2px solid;
+    border-radius: 30px;
+    font-size: 1em;
+    width:60%;
+}
+
+    #add_to_cart_btn p {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+

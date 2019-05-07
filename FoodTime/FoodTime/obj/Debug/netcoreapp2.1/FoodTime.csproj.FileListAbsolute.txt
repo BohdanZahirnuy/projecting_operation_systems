@@ -261,3 +261,5 @@ E:\studing\PPS\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.dll
+D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
