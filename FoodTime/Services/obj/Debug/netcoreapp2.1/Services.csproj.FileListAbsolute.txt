@@ -53,3 +53,6 @@ E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.c
 E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.dll
 E:\studing\PPS\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete

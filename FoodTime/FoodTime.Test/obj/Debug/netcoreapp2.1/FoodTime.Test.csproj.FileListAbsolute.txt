@@ -19,3 +19,26 @@ C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.pdb
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.dll
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.csprojAssemblyReference.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.csproj.CoreCompileInputs.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.AssemblyInfoInputs.cache
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.AssemblyInfo.cs
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Views.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Views.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.deps.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.runtimeconfig.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.runtimeconfig.dev.json
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Test.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\Services.dll
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\Services.pdb
+C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.csproj.CopyComplete

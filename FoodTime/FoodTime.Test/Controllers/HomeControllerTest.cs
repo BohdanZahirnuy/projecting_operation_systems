@@ -20,13 +20,8 @@ namespace FoodTime.Test
             var result = controller.Index();
             Assert.IsType<ViewResult>(result);
         }
-        [Fact]
-        public void rows()
-        {
-            FoodContext db = new FoodContext();
-            IEnumerable<Food> foods = db.Food;
-            Assert.Equal(1, foods.Count());
-        }
+        
+       
         [Fact]
         public void Test()
         {

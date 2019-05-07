@@ -28,10 +28,10 @@ namespace Services.Implementation
             OrderDto dto = new OrderDto
             {
                 Id = entity.Id,
-                Number = entity.Number,
-                Quantity = entity.Quantity,
+                Info = entity.Info,
+                User = entity.User,
                 Address = entity.Address,
-                Dish = entity.Dish
+                Date = entity.Date
             };
 
             return dto;
@@ -46,10 +46,10 @@ namespace Services.Implementation
             Order entity = new Order
             {
                 Id = dto.Id,
-                Number = dto.Number,
-                Quantity = dto.Quantity,
+                Info = dto.Info,
+                User = dto.User,
                 Address = dto.Address,
-                Dish = dto.Dish
+                Date = dto.Date
             };
 
             return entity;
@@ -121,10 +121,10 @@ namespace Services.Implementation
                 throw new NullReferenceException();
             }
             entity.Id = dto.Id;
-            entity.Number = dto.Number;
-            entity.Quantity = dto.Quantity;
+            entity.Info = dto.Info;
+            entity.User = dto.User;
             entity.Address = dto.Address;
-            entity.Dish = dto.Dish;
+               entity.Date = dto.Date;
 
             Repository.Update(entity);
             _unitOfWork.SaveChanges();

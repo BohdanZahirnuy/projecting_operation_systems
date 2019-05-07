@@ -3,7 +3,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csproj.CoreCompileInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfoInputs.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfo.cs
-C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csprojAssemblyReference.cache
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.json
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.dev.json
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb

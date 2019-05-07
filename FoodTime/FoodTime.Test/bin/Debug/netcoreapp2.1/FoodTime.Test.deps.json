@@ -2806,8 +2806,8 @@
       },
       "FoodTime/1.0.0": {
         "dependencies": {
-          "FoodTime.Data": "1.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "Services": "1.0.0"
         },
         "runtime": {
           "FoodTime.dll": {}
@@ -2821,6 +2821,14 @@
         },
         "runtime": {
           "FoodTime.Data.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "FoodTime.Data": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
         }
       }
     }
@@ -4398,6 +4406,11 @@
       "sha512": ""
     },
     "FoodTime.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
