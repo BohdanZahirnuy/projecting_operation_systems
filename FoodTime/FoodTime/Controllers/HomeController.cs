@@ -25,10 +25,18 @@ namespace FoodTime.Controllers
             IEnumerable<FoodDto> foodDtos = foodService.Get();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<FoodDto, FoodViewModel>()).CreateMapper();
             var food = mapper.Map<IEnumerable<FoodDto>, List<FoodViewModel>>(foodDtos);
-            return  View(food);
+            return View(food);
 
         }
 
+        public IActionResult FoodDetail(int? id)
+        {
+            FoodDto food = foodService.Get(id.ToString());
+            var order = new FoodViewModel { Id = food.Id, Category=food.Category, Componets= food.Componets, ExtraInfo=food.ExtraInfo, Name=food.Name, Price=food.Price, Weight=food.Weight };
+
+            return View(order);
+        }
 
     }
 }
+

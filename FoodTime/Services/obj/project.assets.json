@@ -4393,23 +4393,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yato\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Zlatilda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\studing\\PPS\\FoodTime\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "E:\\studing\\PPS\\FoodTime\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\yato\\.nuget\\packages\\",
-      "outputPath": "E:\\studing\\PPS\\FoodTime\\Services\\obj\\",
+      "projectPath": "D:\\projecting_programming_systems\\FoodTime\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Zlatilda\\.nuget\\packages\\",
+      "outputPath": "D:\\projecting_programming_systems\\FoodTime\\Services\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\yato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zlatilda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4422,8 +4418,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\studing\\PPS\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj": {
-              "projectPath": "E:\\studing\\PPS\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj"
+            "D:\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj": {
+              "projectPath": "D:\\projecting_programming_systems\\FoodTime\\FoodTime.Data\\FoodTime.Data.csproj"
             }
           }
         }

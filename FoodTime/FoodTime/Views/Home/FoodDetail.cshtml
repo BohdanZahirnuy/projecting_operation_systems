@@ -2,18 +2,25 @@
     ViewData["Title"] = "FoodDetail";
 }
 
-
-
     <div class="row" id="comment">
         <div id="foodInfo" class="col-3">
             <img id="foodImg" src="~/images/zlata.jpg">
-            <p><h2 style="text-align: center; color:darkgoldenrod;">Price:399$</h2></p>
-            <button type="button" class="btn btn-success " style="margin-left:25%;">Add to Cart</button>
+            <a href="#">
+                    <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
+            </a>
         </div>
         <div class="col-9">
-            <h1>Food Name</h1>
+            <h1>@Model.Name</h1>
             <hr>
-            <p>Some text</p>
+            <p><b>Category: </b>@Model.Category</p>
+            <p><b>Components: </b>@Model.Componets</p>
+
+            @if (Model.ExtraInfo != null)
+            {
+                <p><b>Extra information: </b>@Model.ExtraInfo</p>
+            }
+            <p><b>Weight: </b>@Model.Weight</p>
+            <h3 style="color:crimson"><b>Price: </b>@Model.Price$</h3>
         </div>
     </div>
 
