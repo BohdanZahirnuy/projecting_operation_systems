@@ -187,7 +187,6 @@ E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pa
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Food\FoodDetail.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
@@ -263,3 +262,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.dll
 D:\projecting_programming_systems\FoodTime\FoodTime\bin\Debug\netcoreapp2.1\Services.pdb
+E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\FoodDetail.g.cshtml.cs
+E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Create.g.cshtml.cs
