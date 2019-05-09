@@ -30,10 +30,10 @@
                                 <div class="col-6"><p> @Html.DisplayNameFor(model => model.Weight) : <label style="color: indianred;">@Html.DisplayFor(modelItem => item.Weight) гр</label></p></div>
                                 <div class="col-6"><p> @Html.DisplayNameFor(model => model.Price) : <label style="color: indianred;">@Html.DisplayFor(modelItem => item.Price) $</label></p></div>
                             </div>
-                            <a href="#">
+                            <a href=@Url.Action( "Cart","Home", new { id = item.Id })>
                                 <div class="row" id="add_to_cart_btn">
-                                    <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
-                                    <p>Add to cart</p>
+                                    <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png" >
+                                    <p>Add to cart </p>
                                 </div>
                             </a>
                     </div>

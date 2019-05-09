@@ -32,11 +32,17 @@ namespace FoodTime.Controllers
         public IActionResult FoodDetail(int? id)
         {
             FoodDto food = foodService.Get(id.ToString());
-            var order = new FoodViewModel { Id = food.Id, Category=food.Category, Componets= food.Componets, ExtraInfo=food.ExtraInfo, Name=food.Name, Price=food.Price, Weight=food.Weight };
+            var order = new FoodViewModel { Id = food.Id, Category = food.Category, Componets = food.Componets, ExtraInfo = food.ExtraInfo, Name = food.Name, Price = food.Price, Weight = food.Weight };
 
             return View(order);
         }
 
+        public IActionResult Cart(string Id)
+        {
+      
+          
+            return this.RedirectToAction("Index", "Cart",new { id = Id} );
+        }
     }
 }
 
