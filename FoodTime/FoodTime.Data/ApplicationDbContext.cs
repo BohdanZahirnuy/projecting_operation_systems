@@ -17,6 +17,7 @@ namespace FoodTime.Data
         public DbSet<FoodTime.Data.Models.Comment> Comment{ get; set; }
         public DbSet<FoodTime.Data.Models.Food> Food { get; set; }
         public DbSet<FoodTime.Data.Models.Order> Order { get; set; }
+        public DbSet<FoodTime.Data.Models.CartM> CartM { get; set; }
 
 
 
