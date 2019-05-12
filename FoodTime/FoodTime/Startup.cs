@@ -49,12 +49,14 @@ namespace FoodTime
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddScoped<IRepository<Food>, Repository<Food>>();
+            services.AddScoped<IRepository<CartM>, Repository<CartM>>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Add application services.
+            services.AddTransient<ICartMService, CartMService>();
             services.AddTransient<IFoodService, FoodService>();
-          
+
 
         }
 
