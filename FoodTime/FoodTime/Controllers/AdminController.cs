@@ -79,5 +79,13 @@ namespace FoodTime.Controllers
             foodService.Remove(id.ToString());
             return RedirectToAction("Index");
         }
+
+        public IActionResult Details(int? id)
+        {
+            FoodDto food = foodService.Get(id.ToString());
+            var order = new FoodViewModel { Id = food.Id, Category = food.Category, Componets = food.Componets, ExtraInfo = food.ExtraInfo, Name = food.Name, Price = food.Price, Weight = food.Weight };
+
+            return View(order);
+        }
     }
 }

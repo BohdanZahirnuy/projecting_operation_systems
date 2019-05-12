@@ -24,25 +24,27 @@
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
- 
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FoodTime</a>
-                </div>
-              
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <a asp-area="" asp-controller="Admin" asp-action="Index" class="navbar-brand">Admin Page</a>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                
-            </div>
 
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FoodTime</a>
+        </div>
+
+        @*@if (!User.IsInRole("Admin"))     //коли будуть ролі, буде корисне
+        {*@
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <a asp-area="" asp-controller="Admin" asp-action="Index" class="navbar-brand">Admin Page</a>
+                </ul>
+                <partial name="_LoginPartial" />
+
+            </div>
+        @*}*@
     </nav>
 
     <partial name="_CookieConsentPartial" />

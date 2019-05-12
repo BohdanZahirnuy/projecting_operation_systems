@@ -273,3 +273,6 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
+D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
+D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
+D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Details.g.cshtml.cs

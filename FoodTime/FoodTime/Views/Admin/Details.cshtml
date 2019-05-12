@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Details";
+}
+@using FoodTime.Models
+@model FoodTime.Models.FoodViewModel
+
+<div class="container" style="text-align:center">
+    <h3 style="color:brown; font-weight: bold;">@Model.Name</h3>
+    <p><b>Components: </b> @Model.Componets</p>
+    <p><b>Extrainfo: </b> @Model.ExtraInfo</p>
+    <p><b>Weight: </b> @Model.Weight гр</p>
+    <p><b>Price: </b> @Model.Price$</p>
+</div>

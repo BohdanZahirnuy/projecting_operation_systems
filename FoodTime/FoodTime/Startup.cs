@@ -103,6 +103,13 @@ namespace FoodTime
                     name: "default",
                     template: "{controller=Home}/{action=FoodDetail}/{id}");
             });
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Admin}/{action=Details}/{id}");
+            });
         }
     }
 }
