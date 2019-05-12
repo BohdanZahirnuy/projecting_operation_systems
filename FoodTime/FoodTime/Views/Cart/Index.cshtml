@@ -3,13 +3,41 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
-@*@using Services.BusinessClasses
-    @model IEnumerable<Cart>
+<h2>Cart</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Weight</th>
+            <th>Price</th>
+            <th>Components</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @using Services.BusinessClasses
+        @model Cart
+            @foreach (var item in Model.Lines)
+     {
+        <tr>
+            <td>@item.Food.Name</td>
+            <td>@item.Food.Category</td>
+            <td>@item.Food.Weight</td>
+            <td>@item.Food.Price</td>
+            <td>@item.Food.Componets</td>
+            <td >@item.Quantity</td>
+        </tr>
 
-    @foreach (var item in Model)
-    {
-        <div class="row"><p>@Html.DisplayFor(modelItem => item.foods )<p></div>
-    }*@
 
-<p>@ViewBag.id<p>
+     }
+            </tbody>
+    <tfoot>
+        <tr>
+        <td colspan="5" class="text-right">
+            Total Price:
+        </td class="text-right">
+            <td>@Model.ComputeTotalValue().ToString("# $")</td>
+    </tr>
+    </tfoot>
+        </table>

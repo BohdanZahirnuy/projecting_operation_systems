@@ -1,34 +1,45 @@
-﻿using Services.Interfaces;
-using Services.Implementation;
+﻿using Services.Dto;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Services.Dto;
 
 namespace Services.BusinessClasses
 {
-  public class Cart
+    public class Cart
     {
-        List<FoodDto> foods;
-        Dictionary<FoodDto, int> orders = new Dictionary<FoodDto, int>();
-        IFoodService serv;
-        public Cart(IFoodService _serv )
+        private List<CartLine> lineCollection = new List<CartLine>();
+        public IEnumerable<CartLine> Lines { get { return lineCollection; } }
+        public void AddItem(FoodDto food, int quantity)
         {
-            serv = _serv;
-        }
-        public void Add(string id)
-        {
-            if(orders.ContainsKey(serv.Get(id)))
+            CartLine line = lineCollection.Where(f => f.Food.Id == food.Id).FirstOrDefault();
+            if (line == null)
             {
-                int prevValue;
-                orders.TryGetValue(serv.Get(id),out prevValue);
-                orders[serv.Get(id)] = prevValue + 1;
+                lineCollection.Add(new CartLine { Food = food, Quantity = quantity });
             }
             else
             {
-                orders.Add(serv.Get(id),1);
+                line.Quantity += quantity;
             }
         }
-        
+        public void RemoveLine(FoodDto food)
+        {
+            lineCollection.RemoveAll(f => f.Food.Id == food.Id);
+        }
+        public double ComputeTotalValue()
+        {
+            return lineCollection.Sum(f => f.Food.Price * f.Quantity);
+        }
+        public void Clear()
+        {
+            lineCollection.Clear();
+        }
+
     }
+    public class CartLine
+    {
+        public FoodDto Food { get; set; }
+        public int Quantity { get; set; }
+    }
+
 }

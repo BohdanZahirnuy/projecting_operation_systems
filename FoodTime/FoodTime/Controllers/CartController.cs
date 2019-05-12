@@ -1,24 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Services.BusinessClasses;
 using Services.Interfaces;
+using Services.BusinessClasses;
+using Microsoft.AspNetCore.Http;
 
 namespace FoodTime.Controllers
 {
     public class CartController : Controller
     {
-        IFoodService serv;
-        Cart cart;
-        public IActionResult Index( string id)
+        IFoodService foodService;
+        Cart cart = new Cart();
+        public CartController(IFoodService serv)
         {
-            //serv = _serv;
-            //cart = new Cart(serv);
-            //cart.Add(id);
-            ViewBag.id = id;
+            foodService = serv;
+
+        }
+
+        public IActionResult Index(string id)
+        {
+
+
+            cart.AddItem(foodService.Get(id), 1);
             return View(cart);
         }
+
     }
 }
