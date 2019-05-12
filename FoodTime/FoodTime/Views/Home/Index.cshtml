@@ -4,7 +4,23 @@
 @using FoodTime.Models
 @model IEnumerable<FoodTime.Models.FoodViewModel>
 <link href="THE REFERENCE FILE URL" rel="stylesheet" type="text/css" />
+<style>
+    p {
+        font-weight: bold;
+        font-size: 16px;
+    }
 
+    label {
+        font-weight: bold;
+        color: black;
+    }
+
+    .productImg {
+        border: 2px solid black;
+        border-radius: 15%;
+        box-shadow: 6px 6px gray;
+    }
+</style>
 <div class="container">
 
     @{
@@ -17,32 +33,32 @@
         @foreach (var item in Model)
         {
 
-            
-                <div class="col-4" style="font-size:1.3em;" id="dish">
-                    <div class="col-12">
-                        <img src="~/images/cheese.jpg" />
-                        <a href="~/Home/FoodDetail/@item.Id">
-                            <div class="row"><h3 style="font-weight:bold;">@Html.DisplayFor(modelItem => item.Name)</h3></div>
-                        </a>
-                            <div class="row"><p>@Html.DisplayFor(modelItem => item.Componets)<p></div>
-                            <div class="row"><p style="font-style: italic;">@Html.DisplayFor(modelItem => item.ExtraInfo)</p></div>
-                            <div class="row">
-                                <div class="col-6"><p> @Html.DisplayNameFor(model => model.Weight) : <label style="color: indianred;">@Html.DisplayFor(modelItem => item.Weight) гр</label></p></div>
-                                <div class="col-6"><p> @Html.DisplayNameFor(model => model.Price) : <label style="color: indianred;">@Html.DisplayFor(modelItem => item.Price) $</label></p></div>
-                            </div>
-                            <a href=@Url.Action( "Cart","Home", new { id = item.Id })>
-                                <div class="row" id="add_to_cart_btn">
-                                    <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png" >
-                                    <p>Add to cart </p>
-                                </div>
-                            </a>
+
+            <div class="col-4" style="font-size:1.3em;" id="dish">
+                <div class="col-12">
+                    <img class="productImg" src="~/images/cheese.jpg" />
+                    <a href="~/Home/FoodDetail/@item.Id">
+                        <div class="row"><h3 style="font-weight:bold;">@Html.DisplayFor(modelItem => item.Name)</h3></div>
+                    </a>
+                    <div class="row"><p>@Html.DisplayFor(modelItem => item.Componets)<p></div>
+                    <div class="row"><p style="font-style: italic;">@Html.DisplayFor(modelItem => item.ExtraInfo)</p></div>
+                    <div class="row">
+                        <div class="col-6"><p> @Html.DisplayNameFor(model => model.Weight) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Weight) гр</label></p></div>
+                        <div class="col-6"><p> @Html.DisplayNameFor(model => model.Price) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Price) $</label></p></div>
                     </div>
+                    <a href=@Url.Action( "Cart","Home", new { id = item.Id })>
+                        <div class="row" id="add_to_cart_btn">
+                            <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
+                            <p>Add to cart </p>
+                        </div>
+                    </a>
                 </div>
-            
+            </div>
+
         }
 
-        </div>
+    </div>
 
 </div>
-   
+
 
