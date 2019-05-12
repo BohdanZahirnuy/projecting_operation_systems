@@ -13,7 +13,6 @@ E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runt
 E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.runtimeconfig.dev.json
 E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.dll
 E:\studing\PPS\FoodTime\FoodTime.Data\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
-E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csprojAssemblyReference.cache
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.csproj.CoreCompileInputs.cache
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfoInputs.cache
 E:\studing\PPS\FoodTime\FoodTime.Data\obj\Debug\netcoreapp2.1\FoodTime.Data.AssemblyInfo.cs
