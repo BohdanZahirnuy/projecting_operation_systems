@@ -19,12 +19,47 @@ namespace FoodTime.Controllers
         {
             foodService = serv;
         }
-        public IActionResult Index()
+        public IActionResult Index(string sortOrder, string searchString)
         {
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["PriceSortParm"] = sortOrder == "Price" ? "price_desc" : "Price";
+            ViewData["CategorySortParm"] = sortOrder == "Pizza" ? "Sushi" : "Pizza";
+            ViewData["CurrentFilter"] = searchString;
+
 
             IEnumerable<FoodDto> foodDtos = foodService.Get();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<FoodDto, FoodViewModel>()).CreateMapper();
-            var food = mapper.Map<IEnumerable<FoodDto>, List<FoodViewModel>>(foodDtos);
+            var food = mapper.Map<IEnumerable<FoodDto>, List<FoodViewModel>>(foodDtos).ToList();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                food = food.Where(s => s.Name.Contains(searchString)
+                                       || s.Componets.Contains(searchString)
+                                       || s.ExtraInfo.Contains(searchString)).ToList();
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    food = food.OrderByDescending(s => s.Name).ToList();
+                    break;
+                case "Price":
+                    food = food.OrderBy(s => s.Price).ToList();
+                    break;
+                case "price_desc":
+                    food = food.OrderByDescending(s => s.Price).ToList();
+                    break;
+                case "Pizza":
+                    food = food.Where(x => x.Category == "pizza").Select(x => x).Distinct().ToList();
+                    break;
+                case "Sushi":
+                    food = food.Where(x => x.Category == "sushi").Select(x => x).Distinct().ToList();
+                    break;
+                default:
+                    food = food.OrderBy(s => s.Name).ToList();
+                    break;
+            }
+
             return View(food);
 
         }
