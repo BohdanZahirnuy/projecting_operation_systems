@@ -14,10 +14,13 @@ namespace FoodTime.Controllers
 {
     public class HomeController : Controller
     {
+
         IFoodService foodService;
-        public HomeController(IFoodService serv)
+        ICommentService commentService;
+        public HomeController(IFoodService serv, ICommentService commentServ)
         {
             foodService = serv;
+            commentService = commentServ;
         }
         public IActionResult Index(string sortOrder, string searchString)
         {
@@ -69,6 +72,20 @@ namespace FoodTime.Controllers
             FoodDto food = foodService.Get(id.ToString());
             var order = new FoodViewModel { Id = food.Id, Category = food.Category, Componets = food.Componets, ExtraInfo = food.ExtraInfo, Name = food.Name, Price = food.Price, Weight = food.Weight };
 
+            // comments
+            IEnumerable<CommentDto> commentDtos = commentService.Get();
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<CommentDto, CommentViewModel>()).CreateMapper();
+            var comments = mapper.Map<IEnumerable<CommentDto>, List<CommentViewModel>>(commentDtos);
+            var _comments = new List<CommentViewModel>();
+            foreach (var com in comments)
+            {
+                if (com.FoodId == order.Id)
+                {
+                    _comments.Add(com);
+                }
+            }
+            _comments = _comments.OrderBy(x => x.Date).ToList();
+            order.comments = _comments;
             return View(order);
         }
 
@@ -77,6 +94,22 @@ namespace FoodTime.Controllers
       
           
             return this.RedirectToAction("Index", "Cart",new { id = Id} );
+        }
+        [HttpPost]
+        public IActionResult Comment(CommentViewModel vm)
+        {
+            vm.Date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                var mapper = new MapperConfiguration(cfg => cfg.CreateMap<CommentViewModel, CommentDto>()).CreateMapper();
+                var _comment = mapper.Map<CommentViewModel, CommentDto>(vm);
+                commentService.Add(_comment);
+                return RedirectToAction(vm.FoodId.ToString(), "Home/FoodDetail");
+            }
+            else
+            {
+                return View(vm.FoodId.ToString(), "Home/FoodDetail");
+            }
         }
     }
 }

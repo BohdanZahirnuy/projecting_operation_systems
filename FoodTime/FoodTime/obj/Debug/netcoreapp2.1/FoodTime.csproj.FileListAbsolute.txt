@@ -283,3 +283,4 @@ C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Home\FoodDetail.g.cshtml.cs
+E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Details.g.cshtml.cs

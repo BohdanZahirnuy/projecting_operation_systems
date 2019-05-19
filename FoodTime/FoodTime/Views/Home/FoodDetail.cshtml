@@ -2,71 +2,52 @@
     ViewData["Title"] = "FoodDetail";
 }
 
-    <div class="row" id="comment">
-        <div id="foodInfo" class="col-3">
-            <img id="foodImg" src="~/images/zlata.jpg">
-            <a href="#">
-                    <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
-            </a>
-        </div>
-        <div class="col-9">
-            <h1>@Model.Name</h1>
-            <hr>
-            <p><b>Category: </b>@Model.Category</p>
-            <p><b>Components: </b>@Model.Componets</p>
+<div class="row" id="comment">
+    <div id="foodInfo" class="col-3">
+        <img id="foodImg" src="~/images/zlata.jpg">
+        <a href="#">
+            <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
+        </a>
+    </div>
+    <div class="col-9">
+        <h1>@Model.Name</h1>
+        <hr>
+        <p><b>Category: </b>@Model.Category</p>
+        <p><b>Components: </b>@Model.Componets</p>
 
-            @if (Model.ExtraInfo != null)
+        @if (Model.ExtraInfo != null)
+        {
+            <p><b>Extra information: </b>@Model.ExtraInfo</p>
+        }
+        <p><b>Weight: </b>@Model.Weight</p>
+        <h3 style="color:crimson"><b>Price: </b>@Model.Price$</h3>
+    </div>
+</div>
+
+<div class="row" id=comment>
+    <form name="test" method="post" asp-controller="Home" asp-action="Comment" class="col-12">
+        <input name ="FoodId"value="@Model.Id" style="visibility:hidden"/>
+        <p>
+            Comments:<Br>
+            <textarea name="Message" cols="40" rows="3" class="  form-control"></textarea>
+        </p>
+        <p><input type="submit" class="btn btn-outline-primary " value="Send" style="float:right;">
+    </form>
+</div>
+
+        @foreach(CommentViewModel comment in @Model.comments)
             {
-                <p><b>Extra information: </b>@Model.ExtraInfo</p>
+                <div class="row border border-secondary rounded" id="comment">
+                    <div class="col-8">
+
+                        <a href="" style="color: #b34700; font-weight:bold;">author</a>
+                    </div>
+                    <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
+                    <div class="col-12">
+                        <p>@Html.DisplayFor(modelItem=>comment.Message)</p>
+
+                    </div>
+
+                </div>
             }
-            <p><b>Weight: </b>@Model.Weight</p>
-            <h3 style="color:crimson"><b>Price: </b>@Model.Price$</h3>
-        </div>
-    </div>
 
-    <div class="row" id=comment>
-        <form name="test" method="post" action="" class="col-12">
-            <p>
-                Comments:<Br>
-                <textarea name="comment" cols="40" rows="3" class="  form-control"></textarea>
-            </p>
-            <p><input type="submit" class="btn btn-outline-primary " value="Send" style="float:right;">
-        </form>
-    </div>
-
-    <div class="row border border-secondary rounded" id="comment">
-        <div class="col-8">
-
-            <a href="" style="color: #b34700; font-weight:bold;">author</a>
-        </div>
-        <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
-        <div class="col-12">
-            <p>Comment Text	</p>
-
-        </div>
-
-    </div>
-    <div class="row border border-secondary rounded" id="comment">
-        <div class="col-8">
-
-            <a href="" style="color: #b34700; font-weight:bold;">author</a>
-        </div>
-        <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
-        <div class="col-12">
-            <p>Comment Text	</p>
-
-        </div>
-
-    </div>
-    <div class="row border border-secondary rounded" id="comment">
-        <div class="col-8">
-
-            <a href="" style="color: #b34700; font-weight:bold;">author</a>
-        </div>
-        <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">1999-12-31</label></div>
-        <div class="col-12">
-            <p>Comment Text	</p>
-
-        </div>
-
-    </div>

@@ -9,9 +9,8 @@ namespace Services.Dto
     public class CommentDto
     {
         public int Id { get; set; }
-        public string Content { get; set; }
-        public string DishId { get; set; }
-        public string Owner { get; set; }
+        public string Message { get; set; }
         public DateTime Date { get; set; }
+        public int FoodId { get; set; }
     }
 }

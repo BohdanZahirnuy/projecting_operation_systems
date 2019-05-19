@@ -26,10 +26,10 @@ namespace Services.Implementation
             CommentDto dto = new CommentDto
             {
                 Id = entity.Id,
-                Content = entity.Content,
+                Message = entity.Message,
                 Date = entity.Date,
-                Owner = entity.Owner,
-                DishId = entity.DishId
+                FoodId = entity.FoodId
+
             };
 
             return dto;
@@ -44,10 +44,9 @@ namespace Services.Implementation
             Comment entity = new Comment
             { 
                 Id = dto.Id,
-                Content = dto.Content,
+                Message = dto.Message,
                 Date = dto.Date,
-                Owner = dto.Owner,
-                DishId = dto.DishId
+                FoodId = dto.FoodId
             };
 
             return entity;
@@ -66,6 +65,7 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
+       
         public override IEnumerable<CommentDto> Get()
         {
             
@@ -121,10 +121,9 @@ namespace Services.Implementation
             }
 
             entity.Id = dto.Id;
-            entity.Content = dto.Content;
+            entity.Message = dto.Message;
             entity.Date = dto.Date;
-            entity.Owner = dto.Owner;
-            entity.DishId = dto.DishId;
+            entity.FoodId = dto.FoodId;
 
             Repository.Update(entity);
             _unitOfWork.SaveChanges();
