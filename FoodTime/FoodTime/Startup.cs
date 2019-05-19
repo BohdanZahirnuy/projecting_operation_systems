@@ -43,21 +43,23 @@ namespace FoodTime
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            //services.AddDefaultIdentity<IdentityUser>()
+            //.AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddScoped<IRepository<Food>, Repository<Food>>();
             services.AddScoped<IRepository<CartM>, Repository<CartM>>();
+            services.AddScoped<IRepository<User>, Repository<User>>();
             services.AddScoped<IRepository<Comment>, Repository<Comment>>();
-
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Add application services.
+            services.AddTransient<ICommentService, CommentService>();
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<ICartMService, CartMService>();
             services.AddTransient<IFoodService, FoodService>();
-            services.AddTransient<ICommentService, CommentService>();
+            services.AddTransient<IUserService, UserService>();
 
 
         }
@@ -90,9 +92,9 @@ namespace FoodTime
             });
             app.UseMvc(routes =>
             {
-            routes.MapRoute(
-                name: "default",
-                template: "{controller=Admin}/{action=Index}");
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Admin}/{action=Index}");
             });
             app.UseMvc(routes =>
             {
@@ -113,6 +115,12 @@ namespace FoodTime
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Admin}/{action=Details}/{id}");
+            });
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Roles}/{action=Details}/{id}");
             });
         }
     }

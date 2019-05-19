@@ -8,14 +8,16 @@ using Services.Dto;
 using Services.Implementation;
 using Services.Interfaces;
 using AutoMapper;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace FoodTime.Controllers
 {
+
+    [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
         IFoodService foodService;
-      
+
         public AdminController(IFoodService serv)
         {
             foodService = serv;
@@ -27,12 +29,12 @@ namespace FoodTime.Controllers
             var food = mapper.Map<IEnumerable<FoodDto>, List<FoodViewModel>>(foodDtos);
             return View(food);
         }
-       [HttpGet]
+        [HttpGet]
         public ViewResult Edit(int id)
         {
             FoodDto food = foodService.Get(id.ToString());
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<FoodDto, FoodViewModel>()).CreateMapper();
-            var _food = mapper.Map< FoodDto, FoodViewModel>(food);
+            var _food = mapper.Map<FoodDto, FoodViewModel>(food);
             return View(_food);
 
         }
@@ -52,7 +54,7 @@ namespace FoodTime.Controllers
                 return View(food);
             }
         }
-        
+
         [HttpGet]
         public ViewResult Create()
         {
