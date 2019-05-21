@@ -9,6 +9,8 @@ namespace FoodTime.Models
     public class CommentViewModel
     {
         [Required]
+        public int Id { get; set; }
+        [Required]
         public int FoodId { get; set; }
         [Required]
         public string Message { get; set; }

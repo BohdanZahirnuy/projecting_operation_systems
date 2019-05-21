@@ -40,13 +40,13 @@
                     <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FoodTime</a>
                 </li>
 
-                @if (!User.IsInRole("admin") || !User.IsInRole("superadmin"))
+                @if (User.IsInRole("Admin") || User.IsInRole("Superadmin"))
                 {
                     <li class="nav-item">
                         <a asp-area="" asp-controller="Admin" asp-action="Index" class="navbar-brand">AdminPanel</a>
                     </li>
                     <li class="nav-item">
-                        <a asp-area="" asp-controller="Roles" asp-action="Index" class="navbar-brand">UsersBase</a>
+                        <a asp-area="" asp-controller="Roles" asp-action="Index" class="navbar-brand">UserPanel</a>
                     </li>
                 }
 

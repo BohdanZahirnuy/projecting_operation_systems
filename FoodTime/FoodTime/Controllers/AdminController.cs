@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace FoodTime.Controllers
 {
 
-    [Authorize(Roles = "admin")]
+    [Authorize (Roles ="Admin")]
     public class AdminController : Controller
     {
         IFoodService foodService;
@@ -27,7 +27,9 @@ namespace FoodTime.Controllers
             IEnumerable<FoodDto> foodDtos = foodService.Get();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<FoodDto, FoodViewModel>()).CreateMapper();
             var food = mapper.Map<IEnumerable<FoodDto>, List<FoodViewModel>>(foodDtos);
-            return View(food);
+            
+                return View(food);
+            
         }
         [HttpGet]
         public ViewResult Edit(int id)

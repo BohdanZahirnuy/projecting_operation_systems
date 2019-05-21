@@ -56,3 +56,4 @@ C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll

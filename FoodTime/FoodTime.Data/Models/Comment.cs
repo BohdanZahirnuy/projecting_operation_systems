@@ -12,5 +12,6 @@ namespace FoodTime.Data.Models
         public DateTime Date { get; set; }
         public int FoodId { get; set; }
 
+
     }
 }

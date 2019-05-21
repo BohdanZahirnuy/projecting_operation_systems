@@ -17,21 +17,26 @@
                 @Html.HiddenFor(m => m.Id)
                 @foreach (var property in ViewData.ModelMetadata.Properties)
                 {
-                    if (property.PropertyName != "Id")
+                    if (property.PropertyName != "Id" )
                     {
-                        <div class="form-group">
-                            <label>@(property.DisplayName ?? property.PropertyName)</label>
-                            @if (property.PropertyName == "Description")
-                            {
-                                @Html.TextArea(property.PropertyName, null,
-                                    new { @class = "form-control", rows = 5 })
-                            }
-                            else
-                            {
-                                @Html.TextBox(property.PropertyName, null,
-                                    new { @class = "form-control" })
-                            }
-                        </div>
+                <div class="form-group">
+                    @if (property.PropertyName != "comments")
+                    {
+                        <label>@(property.DisplayName ?? property.PropertyName)</label>
+                    }
+
+                    @if (property.PropertyName == "Components")
+                    {
+                        @Html.TextArea(property.PropertyName, null,
+                            new { @class = "form-control", rows = 5 })
+                    }
+                    else if (property.PropertyName != "comments")
+                    {
+
+                        @Html.TextBox(property.PropertyName, null,
+                            new { @class = "form-control" })
+                    }
+                </div>
                     }
                 }
             </div>

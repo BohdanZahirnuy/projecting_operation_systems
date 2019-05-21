@@ -111,6 +111,13 @@ namespace FoodTime.Controllers
                 return View(vm.FoodId.ToString(), "Home/FoodDetail");
             }
         }
+
+        public IActionResult Delete(int id, int postId)
+        {
+            int _postId = postId;
+            commentService.Remove(id.ToString());
+            return RedirectToAction(_postId.ToString(),"Home/FoodDetail");
+        }
     }
 }
 

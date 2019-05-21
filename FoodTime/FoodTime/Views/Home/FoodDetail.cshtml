@@ -26,7 +26,7 @@
 
 <div class="row" id=comment>
     <form name="test" method="post" asp-controller="Home" asp-action="Comment" class="col-12">
-        <input name ="FoodId"value="@Model.Id" style="visibility:hidden"/>
+        <input name="FoodId" value="@Model.Id" style="visibility:hidden" />
         <p>
             Comments:<Br>
             <textarea name="Message" cols="40" rows="3" class="  form-control"></textarea>
@@ -34,20 +34,38 @@
         <p><input type="submit" class="btn btn-outline-primary " value="Send" style="float:right;">
     </form>
 </div>
+<hr style="border-color:black" />
+@if (@Model.comments.Count == 0)
+{
 
-        @foreach(CommentViewModel comment in @Model.comments)
-            {
-                <div class="row border border-secondary rounded" id="comment">
-                    <div class="col-8">
+    <h3 class="text-center">There is no comments yet! You can be first!</h3>
 
-                        <a href="" style="color: #b34700; font-weight:bold;">author</a>
-                    </div>
-                    <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
-                    <div class="col-12">
-                        <p>@Html.DisplayFor(modelItem=>comment.Message)</p>
+}
+else
+{
+    @foreach (CommentViewModel comment in @Model.comments)
+    {
+    <div class="row border border-secondary rounded" id="comment">
+        <div class="col-8">
 
-                    </div>
+            <a href="" style="color: #b34700; font-weight:bold;">author</a>
+        </div>
+        <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
+        <div class="col-12">
+            <p>@Html.DisplayFor(modelItem => comment.Message)</p>
 
-                </div>
-            }
+        </div>
+        @using (Html.BeginForm("Delete", "Home"))
+        {
+            @Html.Hidden("id", comment.Id);
+            @Html.Hidden("postId", comment.FoodId);
+            <input type="submit"
+                   class="btn btn-danger btn-xs"
+                   value="Delete" />
+        }
+    </div>
+    }
+
+}
+<hr style="border-color:black" />
 

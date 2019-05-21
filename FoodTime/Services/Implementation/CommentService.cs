@@ -73,10 +73,7 @@ namespace Services.Implementation
               .Get()
               .ToList();
 
-            if (!entities.Any())
-            {
-                throw new NullReferenceException();
-            }
+            
 
             return entities.Select(e => MapToDto(e));
         }

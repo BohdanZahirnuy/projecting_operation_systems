@@ -26,61 +26,69 @@
     @{
         ViewBag.Title = "Index";
     }
-
-    <div class="row">
-
-        <h3 style="margin-bottom: 2em; margin-right: 1em;"><strong>Sort by:</strong></h3>
-
-        <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Name) desc/asc</a>
-        </button>
-        <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["PriceSortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Price) desc/asc</a>
-        </button>
-        <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["CategorySortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Category) pizza/sushi</a>
-        </button>
-
-        <form asp-action="Index" method="get" style="margin-top: 1em;">
-            <div class="form-actions no-color">
-                <p>
-                    Search: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
-                    <input type="submit" value="Search" class="btn btn-default" /> |
-                    <a asp-action="Index">Back to Full List</a>
-                </p>
-            </div>
-        </form>
-    </div>
-    <div class="row">
-        @foreach (var item in Model)
-        {
+    @if (Model.FirstOrDefault() == null)
+    {
+        <h2 class="text-center text-danger">There is no food yet!</h2>
+    }
+    else
+    {
 
 
-            <div class="col-4" style="font-size:1.3em;" id="dish">
-                <div class="col-12">
-                    <img class="productImg" src="~/images/pizza.jpg" />
-                    <a href="~/Home/FoodDetail/@item.Id">
-                        <div class="row"><h3 style="font-weight:bold;">@Html.DisplayFor(modelItem => item.Name)</h3></div>
-                    </a>
-                    <div class="row"><p>@Html.DisplayFor(modelItem => item.Componets)<p></div>
-                    <div class="row"><p style="font-style: italic;">@Html.DisplayFor(modelItem => item.ExtraInfo)</p></div>
-                    <div class="row">
-                        <div class="col-6"><p> @Html.DisplayNameFor(model => model.Weight) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Weight) гр</label></p></div>
-                        <div class="col-6"><p> @Html.DisplayNameFor(model => model.Price) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Price) $</label></p></div>
-                    </div>
-                    <a href=@Url.Action( "Cart","Home", new { id = item.Id })>
-                        <div class="row" id="add_to_cart_btn">
-                            <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
-                            <p>Add to cart </p>
-                        </div>
-                    </a>
+        <div class="row">
+
+            <h3 style="margin-bottom: 2em; margin-right: 1em;"><strong>Sort by:</strong></h3>
+
+            <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Name) desc/asc</a>
+            </button>
+            <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PriceSortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Price) desc/asc</a>
+            </button>
+            <button type="button" class="btn btn-success" style="height: 3em; margin-top: 1em; margin-right: 1em;">
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CategorySortParm"]" style="color: white; font-weight: bold;">@Html.DisplayNameFor(model => model.Category) pizza/sushi</a>
+            </button>
+
+            <form asp-action="Index" method="get" style="margin-top: 1em;">
+                <div class="form-actions no-color">
+                    <p>
+                        Search: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+                        <input type="submit" value="Search" class="btn btn-default" /> |
+                        <a asp-action="Index">Back to Full List</a>
+                    </p>
                 </div>
-            </div>
+            </form>
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
 
-        }
 
-    </div>
+                <div class="col-4" style="font-size:1.3em;" id="dish">
+                    <div class="col-12">
+                        <img class="productImg" src="~/images/pizza.jpg" />
+                        <a href="~/Home/FoodDetail/@item.Id">
+                            <div class="row"><h3 style="font-weight:bold;">@Html.DisplayFor(modelItem => item.Name)</h3></div>
+                        </a>
+                        <div class="row"><p>@Html.DisplayFor(modelItem => item.Componets)<p></div>
+                        <div class="row"><p style="font-style: italic;">@Html.DisplayFor(modelItem => item.ExtraInfo)</p></div>
+                        <div class="row">
+                            <div class="col-6"><p> @Html.DisplayNameFor(model => model.Weight) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Weight) гр</label></p></div>
+                            <div class="col-6"><p> @Html.DisplayNameFor(model => model.Price) : <label style="font-weight:bold">@Html.DisplayFor(modelItem => item.Price) $</label></p></div>
+                        </div>
+                        <a href=@Url.Action( "Cart","Home", new { id = item.Id })>
+                            <div class="row" id="add_to_cart_btn">
+                                <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
+                                <p>Add to cart </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
+            }
+
+            }
+        </div>
+    }
 </div>
 
 
