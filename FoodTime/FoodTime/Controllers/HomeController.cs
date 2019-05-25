@@ -91,9 +91,12 @@ namespace FoodTime.Controllers
 
         public IActionResult Cart(string Id)
         {
-      
-          
-            return this.RedirectToAction("Index", "Cart",new { id = Id} );
+            return this.RedirectToAction("Add", "Cart", new { id = Id });
+        }
+
+        public IActionResult CartIndex()
+        {
+            return this.RedirectToAction("Index", "Cart");
         }
         [HttpPost]
         public IActionResult Comment(CommentViewModel vm)
@@ -116,7 +119,7 @@ namespace FoodTime.Controllers
         {
             int _postId = postId;
             commentService.Remove(id.ToString());
-            return RedirectToAction(_postId.ToString(),"Home/FoodDetail");
+            return RedirectToAction(_postId.ToString(), "Home/FoodDetail");
         }
     }
 }

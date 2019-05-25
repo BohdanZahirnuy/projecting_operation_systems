@@ -9,6 +9,8 @@ using Services.Dto;
 using AutoMapper;
 using System.Collections.Generic;
 using System;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace FoodTime.Controllers
 {
@@ -16,56 +18,80 @@ namespace FoodTime.Controllers
     {
         IFoodService foodService;
         ICartMService cartMService;
-
+        UserManager<IdentityUser> userManager;
         Cart cart = new Cart();
-        public CartController(IFoodService serv, ICartMService cartMs)
+        public CartController(IFoodService serv, ICartMService cartMs, UserManager<IdentityUser> _userManager)
         {
+
             foodService = serv;
             cartMService = cartMs;
+            userManager = _userManager;
         }
 
-        public IActionResult Index(string id)
+        public async Task<IActionResult> Index()
         {
 
+            var user = await userManager.GetUserAsync(User);
+            string email = user.Email;
             List<CartLine> cl = new List<CartLine>();
-            if (cartMService.Get() != null)
+            if (cartMService.GetList(email) != null)
             {
-                List<FoodDto> foodDtos = new List<FoodDto>();
-                IEnumerable<CartMDto> cartDtos = cartMService.Get();
-
-                List<int> quantities = new List<int>();
-                foreach (CartMDto c in cartDtos)
-                    quantities.Add(c.Quanity);
-                foreach (CartMDto c in cartDtos)
-                    foodDtos.Add(foodService.Get(c.Id.ToString()));
-
-                for (int i = 0; i < foodDtos.Count; i++)
+                IEnumerable<CartMDto> cartMDtos = cartMService.GetList(email);
+                foreach (var v in cartMDtos)
                 {
                     CartLine l = new CartLine();
-                    l.Food = foodDtos[i];
-                    l.Quantity = quantities[i];
+                    l.Food = foodService.Get(v.FoodId.ToString());
+                    l.Quantity = v.Quanity;
                     cl.Add(l);
                 }
+                cart.Lines = cl;
             }
             else
             {
-                cl = null;
+                return View("EmptyCart");
             }
-            if (cartMService.Get(id.ToString()) != null)
+            return View(cart);
+            //return View();
+        }
+        public async Task<IActionResult> Add(string id)
+        {
+
+            var user = await userManager.GetUserAsync(User);
+            string email = user.Email;
+            List<CartLine> cl = new List<CartLine>();
+
+            if (cartMService.GetFood(id, email) != null)
             {
-                CartMDto temp = cartMService.Get(id.ToString());
+                CartMDto temp = cartMService.GetFood(id, email);
                 temp.Quanity += 1;
                 cartMService.Update(temp);
             }
             else
             {
                 CartMDto temp = new CartMDto();
-                temp.Id = Convert.ToInt32(id);
+                temp.FoodId = Convert.ToInt32(id);
+                temp.UserId = email;
                 temp.Quanity = 1;
                 cartMService.Add(temp);
             }
-            cart.AddItem(foodService.Get(id), 1, cl);
-            return View(cart);
+
+            return this.RedirectToAction("Index");
+
+        }
+        public async Task<IActionResult> Remove(string id)
+        {
+
+            var user = await userManager.GetUserAsync(User);
+            string email = user.Email;
+            List<CartLine> cl = new List<CartLine>();
+
+
+            CartMDto temp = cartMService.GetFood(id, email);
+            cartMService.RemoveFood(id, email);
+
+
+            return this.RedirectToAction("Index");
+
         }
 
     }

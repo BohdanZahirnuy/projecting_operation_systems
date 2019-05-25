@@ -49,6 +49,17 @@
                         <a asp-area="" asp-controller="Roles" asp-action="Index" class="navbar-brand">UserPanel</a>
                     </li>
                 }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a href=@Url.Action("CartIndex", "Home")>
+                            <div class="row" id="cart_btn">
+                                <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
+                                <p>Корзина</p>
+                            </div>
+                        </a>
+                    </li>
+                }
 
             </ul>
             <partial name="_LoginPartial" />

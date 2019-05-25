@@ -18,26 +18,29 @@
     <tbody>
         @using Services.BusinessClasses
         @model Cart
-            @foreach (var item in Model.Lines)
-     {
-        <tr>
-            <td>@item.Food.Name</td>
-            <td>@item.Food.Category</td>
-            <td>@item.Food.Weight</td>
-            <td>@item.Food.Price</td>
-            <td>@item.Food.Componets</td>
-            <td >@item.Quantity</td>
-        </tr>
+        @foreach (var item in Model.Lines)
+        {
+            <tr>
+                <td>@item.Food.Name</td>
+                <td>@item.Food.Category</td>
+                <td>@item.Food.Weight</td>
+                <td>@item.Food.Price</td>
+                <td>@item.Food.Componets</td>
+                <td>@item.Quantity</td>
+                <td>
+                    <a class="btn btn-danger" href=@Url.Action( "Remove","Cart", new { id = item.Food.Id})> Видалити</a>
+                </td>
+            </tr>
 
 
-     }
-            </tbody>
+        }
+    </tbody>
     <tfoot>
         <tr>
-        <td colspan="5" class="text-right">
-            Total Price:
-        </td class="text-right">
+            <td colspan="5" class="text-right">
+                Total Price:
+            </td>
             <td>@Model.ComputeTotalValue().ToString("# $")</td>
-    </tr>
+        </tr>
     </tfoot>
-        </table>
+</table>

@@ -9,13 +9,10 @@ namespace Services.BusinessClasses
     public class Cart
     {
         private List<CartLine> lineCollection = new List<CartLine>();
-        public IEnumerable<CartLine> Lines { get { return lineCollection; } }
-        public void AddItem(FoodDto food, int quantity, List<CartLine> l)
+        public List<CartLine> Lines { get; set; }
+        public void AddItem(FoodDto food, int quantity, string userID)
         {
-            if (l != null)
-            {
-                lineCollection = l;
-            }
+
             CartLine line = lineCollection.Where(f => f.Food.Id == food.Id).FirstOrDefault();
             if (line == null)
             {
@@ -32,7 +29,7 @@ namespace Services.BusinessClasses
         }
         public double ComputeTotalValue()
         {
-            return lineCollection.Sum(f => f.Food.Price * f.Quantity);
+            return Lines.Sum(f => f.Food.Price * f.Quantity);
         }
         public void Clear()
         {

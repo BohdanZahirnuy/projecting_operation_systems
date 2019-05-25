@@ -25,7 +25,8 @@ namespace Services.Implementation
             }
             CartMDto dto = new CartMDto
             {
-                Id = entity.Id,
+                FoodId = entity.FoodId,
+                UserId = entity.UserId,
                 Quanity = entity.Quanity
             };
 
@@ -40,7 +41,8 @@ namespace Services.Implementation
 
             CartM entity = new CartM
             {
-                Id = dto.Id,
+                FoodId = dto.FoodId,
+                UserId = dto.UserId,
                 Quanity = dto.Quanity
             };
 
@@ -50,7 +52,7 @@ namespace Services.Implementation
         public override CartMDto Get(string id)
         {
             CartM entity = Repository
-            .Get(e => e.Id.ToString() == id)
+            .Get(e => e.FoodId.ToString() == id)
             .SingleOrDefault();
 
             if (entity == null)
@@ -60,6 +62,33 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
+        public CartMDto GetFood(string id, string userId)
+        {
+            CartM entity = Repository
+              .Get(e => e.FoodId.ToString() == id && e.UserId.ToString() == userId)
+              .SingleOrDefault();
+
+            if (entity == null)
+            {
+                return null;
+            }
+
+            return MapToDto(entity);
+        }
+        public IEnumerable<CartMDto> GetList(string userId)
+        {
+            List<CartM> entities = Repository
+            .Get(e => e.UserId.ToString() == userId)
+            .ToList();
+
+            if (!entities.Any())
+            {
+                return null;
+            }
+
+            return entities.Select(e => MapToDto(e));
+        }
+
         public override IEnumerable<CartMDto> Get()
         {
             List<CartM> entities = Repository
@@ -75,14 +104,14 @@ namespace Services.Implementation
         }
         public override void Add(CartMDto dto)
         {
-            CartM checkEntity = Repository
-               .Get(e => e.Id == dto.Id)
-               .SingleOrDefault();
+            //CartM checkEntity = Repository
+            //   .Get(e => e.UseId == dto.Id)
+            //   .SingleOrDefault();
 
-            if (checkEntity != null)
-            {
-                throw new DuplicateNameException();
-            }
+            //if (checkEntity != null)
+            //{
+            //    throw new DuplicateNameException();
+            //}
 
             CartM entity = MapToEntity(dto);
             Repository.Add(entity);
@@ -91,7 +120,7 @@ namespace Services.Implementation
         public override void Remove(string id)
         {
             CartM entity = Repository
-            .Get(e => e.Id.ToString() == id)
+            .Get(e => e.FoodId.ToString() == id && e.UserId.ToString() == id)
             .SingleOrDefault();
 
             if (entity == null)
@@ -102,10 +131,25 @@ namespace Services.Implementation
             Repository.Remove(entity);
             _unitOfWork.SaveChanges();
         }
+        public void RemoveFood(string FoodId, string email)
+        {
+            CartM entity = Repository
+            .Get(e => e.FoodId.ToString() == FoodId && e.UserId.ToString() == email)
+            .SingleOrDefault();
+
+            if (entity == null)
+            {
+                throw new NullReferenceException();
+            }
+
+            Repository.Remove(entity);
+            _unitOfWork.SaveChanges();
+        }
+
         public override void Update(CartMDto dto)
         {
             CartM entity = Repository
-             .Get(e => e.Id == dto.Id)
+             .Get(e => e.FoodId == dto.FoodId && e.UserId == dto.UserId)
              .SingleOrDefault();
 
             if (entity == null)
