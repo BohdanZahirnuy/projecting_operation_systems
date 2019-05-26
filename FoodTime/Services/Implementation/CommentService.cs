@@ -26,6 +26,7 @@ namespace Services.Implementation
             CommentDto dto = new CommentDto
             {
                 Id = entity.Id,
+                UserName = entity.UserName,
                 Message = entity.Message,
                 Date = entity.Date,
                 FoodId = entity.FoodId
@@ -44,6 +45,7 @@ namespace Services.Implementation
             Comment entity = new Comment
             { 
                 Id = dto.Id,
+                UserName = dto.UserName,
                 Message = dto.Message,
                 Date = dto.Date,
                 FoodId = dto.FoodId
@@ -118,6 +120,7 @@ namespace Services.Implementation
             }
 
             entity.Id = dto.Id;
+            entity.UserName = dto.UserName;
             entity.Message = dto.Message;
             entity.Date = dto.Date;
             entity.FoodId = dto.FoodId;

@@ -102,6 +102,7 @@ namespace FoodTime.Controllers
         public IActionResult Comment(CommentViewModel vm)
         {
             vm.Date = DateTime.Now;
+            vm.UserName = User.Identity.Name;
             if (ModelState.IsValid)
             {
                 var mapper = new MapperConfiguration(cfg => cfg.CreateMap<CommentViewModel, CommentDto>()).CreateMapper();

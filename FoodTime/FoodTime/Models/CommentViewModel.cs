@@ -10,6 +10,7 @@ namespace FoodTime.Models
     {
         [Required]
         public int Id { get; set; }
+        public string UserName { get; set; }
         [Required]
         public int FoodId { get; set; }
         [Required]

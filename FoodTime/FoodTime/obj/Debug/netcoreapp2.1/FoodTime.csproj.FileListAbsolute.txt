@@ -299,3 +299,4 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Roles\UserList.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\EmptyCart.g.cshtml.cs
 E:\studing\PPS\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\EmptyCart.g.cshtml.cs
+C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\EmptyCart.g.cshtml.cs
