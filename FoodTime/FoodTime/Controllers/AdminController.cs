@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace FoodTime.Controllers
 {
-
+   
     public class AdminController : Controller
     {
         IFoodService foodService;
