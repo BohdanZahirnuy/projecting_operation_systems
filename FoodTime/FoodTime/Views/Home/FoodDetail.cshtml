@@ -3,13 +3,11 @@
 }
 
 <div class="row" id="comment">
-    <div id="foodInfo" class="col-3">
-        <img id="foodImg" src="~/images/zlata.jpg">
-        <a href="#">
-            <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
-        </a>
+    <div id="foodInfo" class="col-4">
+        <img id="foodImg" src="~/images/pizza.jpg">
+        
     </div>
-    <div class="col-9">
+    <div class="col-8">
         <h1>@Model.Name</h1>
         <hr>
         <p><b>Category: </b>@Model.Category</p>
@@ -24,16 +22,19 @@
     </div>
 </div>
 
+@if (User.Identity.IsAuthenticated)
+{
 <div class="row" id=comment>
     <form name="test" method="post" asp-controller="Home" asp-action="Comment" class="col-12">
         <input name="FoodId" value="@Model.Id" style="visibility:hidden" />
         <p>
-            Comments:<Br>
+            Write a comment:<Br>
             <textarea name="Message" cols="40" rows="3" class="  form-control"></textarea>
         </p>
-        <p><input type="submit" class="btn btn-outline-primary " value="Send" style="float:right;">
+        <input type="submit" class="btn btn-primary mb-2" value="Send" style="float:right;">
     </form>
 </div>
+}
 <hr style="border-color:black" />
 @if (@Model.comments.Count == 0)
 {
@@ -46,21 +47,27 @@ else
     @foreach (CommentViewModel comment in @Model.comments)
     {
     <div class="row border border-secondary rounded" id="comment">
-        <div class="col-8">
+        <div class="col-7">
 
             <a href="" style="color: #b34700; font-weight:bold;">@comment.UserName</a>
         </div>
-        <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
-        <div class="col-12">
-            <p>@Html.DisplayFor(modelItem => comment.Message)</p>
+        <div class="col-4" style="font-size:0.7em;text-align: right;margin-top:0.5em;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
+        @if (User.Identity.Name == comment.UserName)
+        {
+            <div class="col-1" style="margin-top: 0.5em;">
+        
             @using (Html.BeginForm("Delete", "Home"))
             {
-                <input name="postId" value="@Model.Id" style="visibility:hidden" />
-                <input name="id" value="@comment.Id" style="visibility:hidden" />
+                <input name="postId" value="@Model.Id" style="visibility:hidden" type="hidden" />
+                <input name="id" value="@comment.Id" style="visibility:hidden" type="hidden" />
                 <input style=" float:right" type="submit"
                        class="btn btn-danger btn-xs"
                        value="Delete" />
             }
+        </div>
+        }
+        <div class="col-12">
+            <p style="font-size: 1.3em;">@Html.DisplayFor(modelItem => comment.Message)</p>
         </div>
 
        
@@ -68,5 +75,5 @@ else
     }
 
 }
-<hr style="border-color:black" />
+
 

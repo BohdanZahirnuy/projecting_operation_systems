@@ -28,7 +28,7 @@
         }
     </style>
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark text-left" id="navi">
         <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                     <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FoodTime</a>
                 </li>
 
-                @if (!User.IsInRole("Admin") || User.IsInRole("Superadmin"))
+                @if (User.IsInRole("Admin") || User.IsInRole("Superadmin"))
                 {
                     <li class="nav-item">
                         <a asp-area="" asp-controller="Admin" asp-action="Index" class="navbar-brand">AdminPanel</a>
@@ -53,9 +53,8 @@
                 {
                     <li class="nav-item">
                         <a href=@Url.Action("CartIndex", "Home")>
-                            <div class="row" id="cart_btn">
-                                <img id="cart" src="~/images/kisspng-shopping-cart-computer-icons-scalable-vector-graph-login-5c5d24d4484df5.0922957315496081482962.png">
-                                <p>Корзина</p>
+                            <div id="cart_btn" style="margin-left: 1em; margin-top: 1em;">
+                                <img id="cart" src="~/images/kart_white.png">
                             </div>
                         </a>
                     </li>
@@ -67,7 +66,7 @@
     </nav>
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
+    <div class="container body-content" style="background-color: rgb(255, 255, 255, 0.8); padding-left: 2em; padding-right:2em; min-height:100%;">
         @RenderBody()
 
 

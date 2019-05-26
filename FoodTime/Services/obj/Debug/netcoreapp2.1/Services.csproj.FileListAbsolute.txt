@@ -58,3 +58,4 @@ C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
 E:\studing\PPS\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\projecting_programming_systems\FoodTime\Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
