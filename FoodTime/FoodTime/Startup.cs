@@ -52,6 +52,7 @@ namespace FoodTime
             services.AddScoped<IRepository<CartM>, Repository<CartM>>();
             services.AddScoped<IRepository<User>, Repository<User>>();
             services.AddScoped<IRepository<Comment>, Repository<Comment>>();
+            services.AddScoped<IRepository<Order>, Repository<Order>>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Add application services.
@@ -60,6 +61,7 @@ namespace FoodTime
             services.AddTransient<ICartMService, CartMService>();
             services.AddTransient<IFoodService, FoodService>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IOrderService, OrderService>();
 
 
         }

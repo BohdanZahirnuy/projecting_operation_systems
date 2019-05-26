@@ -62,10 +62,10 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
-        public CartMDto GetFood(string id, string userId)
+        public CartMDto GetFood(string id, string email)
         {
             CartM entity = Repository
-              .Get(e => e.FoodId.ToString() == id && e.UserId.ToString() == userId)
+              .Get(e => e.FoodId.ToString() == id && e.UserId.ToString() == email)
               .SingleOrDefault();
 
             if (entity == null)
@@ -75,10 +75,10 @@ namespace Services.Implementation
 
             return MapToDto(entity);
         }
-        public IEnumerable<CartMDto> GetList(string userId)
+        public IEnumerable<CartMDto> GetList(string email)
         {
             List<CartM> entities = Repository
-            .Get(e => e.UserId.ToString() == userId)
+            .Get(e => e.UserId.ToString() == email)
             .ToList();
 
             if (!entities.Any())
@@ -146,6 +146,20 @@ namespace Services.Implementation
             _unitOfWork.SaveChanges();
         }
 
+        public void RemoveList(string email)
+        {
+            List<CartM> entities = Repository
+            .Get(e => e.UserId.ToString() == email)
+            .ToList();
+
+            if (entities == null)
+            {
+                throw new NullReferenceException();
+            }
+            Repository.Remove(entities);
+            _unitOfWork.SaveChanges();
+
+        }
         public override void Update(CartMDto dto)
         {
             CartM entity = Repository

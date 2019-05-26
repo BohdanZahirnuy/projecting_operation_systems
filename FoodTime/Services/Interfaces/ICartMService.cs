@@ -10,5 +10,6 @@ namespace Services.Interfaces
         IEnumerable<CartMDto> GetList(string email);
         CartMDto GetFood(string id, string userId);
         void RemoveFood(string FoodId, string email);
+        void RemoveList(string email);
     }
 }

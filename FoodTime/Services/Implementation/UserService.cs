@@ -23,9 +23,20 @@ namespace Services.Implementation
             throw new NotImplementedException();
         }
 
-        public override UserDto Get(string id)
+        public override UserDto Get(string name)
         {
-            throw new NotImplementedException();
+            {
+                User entity = Repository
+                .Get(e => e.UserName.ToString() == name)
+                .SingleOrDefault();
+
+                if (entity == null)
+                {
+                    throw new NullReferenceException();
+                }
+
+                return MapToDto(entity);
+            }
         }
 
         public override IEnumerable<UserDto> Get()
@@ -45,7 +56,20 @@ namespace Services.Implementation
 
         protected override UserDto MapToDto(User entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+            {
+                throw new ArgumentNullException();
+            }
+            UserDto dto = new UserDto
+            {
+                Id = entity.Id,
+                UserName = entity.UserName,
+                Address = entity.Address,
+                Email = entity.Email,
+                PhoneNumber = entity.PhoneNumber
+            };
+
+            return dto;
         }
 
         protected override User MapToEntity(UserDto dto)

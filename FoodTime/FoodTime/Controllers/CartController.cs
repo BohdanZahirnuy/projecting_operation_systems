@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http;
 
 namespace FoodTime.Controllers
 {
@@ -19,13 +20,16 @@ namespace FoodTime.Controllers
         IFoodService foodService;
         ICartMService cartMService;
         UserManager<IdentityUser> userManager;
+        IOrderService orderService;
+        IUserService userService;
         Cart cart = new Cart();
-        public CartController(IFoodService serv, ICartMService cartMs, UserManager<IdentityUser> _userManager)
+        public CartController(IFoodService serv, ICartMService cartMs, UserManager<IdentityUser> _userManager, IOrderService _orderService, IUserService _userService)
         {
-
+            orderService = _orderService;
             foodService = serv;
             cartMService = cartMs;
             userManager = _userManager;
+            userService = _userService;
         }
 
         public async Task<IActionResult> Index()
@@ -115,6 +119,26 @@ namespace FoodTime.Controllers
             return this.RedirectToAction("Index");
         }
 
-
+        public async Task<IActionResult> MakeOrder()
+        {
+            var user = await userManager.GetUserAsync(User);
+            string name = user.UserName;
+            OrderDto order = new OrderDto();
+            UserDto userdto = new UserDto();
+            userdto = userService.Get(user.UserName);
+            order.User = userdto.UserName;
+            order.Address = userdto.Address;
+            order.Date = DateTime.Now;
+            string info = "";
+            List<CartMDto> cl = cartMService.GetList(userdto.Email).ToList();
+            for (int i = 0; i < cl.Count(); i++)
+            {
+                info += foodService.Get(cl[i].FoodId.ToString()).Name + " x" + cl[i].Quanity.ToString() + ' ';
+            }
+            order.Info = info;
+            orderService.Add(order);
+            cartMService.RemoveList(userdto.Email);
+            return View("Order");
+        }
     }
 }
