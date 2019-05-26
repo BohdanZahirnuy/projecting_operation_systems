@@ -40,10 +40,18 @@ namespace FoodTime.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [StringLength(500, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 2)]
+            [Display(Name = "Name")]
+            public string Name { get; set; }
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
-
+            [Required]
+            [Phone]
+            [DataType(DataType.PhoneNumber)]
+            [Display(Name = "PhoneNumber")]
+            public string PhoneNumber { get; set; }
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
@@ -66,7 +74,7 @@ namespace FoodTime.Areas.Identity.Pages.Account
             returnUrl = returnUrl ?? Url.Content("~/");
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+                var user = new IdentityUser { UserName = Input.Name, PhoneNumber=Input.PhoneNumber, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

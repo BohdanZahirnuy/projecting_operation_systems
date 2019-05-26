@@ -6,7 +6,7 @@ namespace Services.Dto
 {
     public class UserDto : IdentityUser
     {
-
+        public string Address { get; set; }
     }
 }
 
