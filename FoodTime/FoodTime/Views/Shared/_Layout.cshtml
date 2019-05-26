@@ -40,7 +40,7 @@
                     <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FoodTime</a>
                 </li>
 
-                @if (User.IsInRole("Admin") || User.IsInRole("Superadmin"))
+                @if (!User.IsInRole("Admin") || User.IsInRole("Superadmin"))
                 {
                     <li class="nav-item">
                         <a asp-area="" asp-controller="Admin" asp-action="Index" class="navbar-brand">AdminPanel</a>

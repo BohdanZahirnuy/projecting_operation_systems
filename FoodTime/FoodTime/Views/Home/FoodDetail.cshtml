@@ -53,16 +53,17 @@ else
         <div class="col-3" style="font-size:12px;text-align: right;">published at: <label style="font-style:italic; color:red;">@comment.Date</label></div>
         <div class="col-12">
             <p>@Html.DisplayFor(modelItem => comment.Message)</p>
-
+            @using (Html.BeginForm("Delete", "Home"))
+            {
+                <input name="postId" value="@Model.Id" style="visibility:hidden" />
+                <input name="id" value="@comment.Id" style="visibility:hidden" />
+                <input style=" float:right" type="submit"
+                       class="btn btn-danger btn-xs"
+                       value="Delete" />
+            }
         </div>
-        @using (Html.BeginForm("Delete", "Home"))
-        {
-            @Html.Hidden("id", comment.Id);
-            @Html.Hidden("postId", comment.FoodId);
-            <input type="submit"
-                   class="btn btn-danger btn-xs"
-                   value="Delete" />
-        }
+
+       
     </div>
     }
 

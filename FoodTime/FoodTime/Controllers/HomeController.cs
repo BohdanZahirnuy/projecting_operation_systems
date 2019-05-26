@@ -115,11 +115,11 @@ namespace FoodTime.Controllers
             }
         }
 
-        public IActionResult Delete(int id, int postId)
+        public IActionResult Delete(int id, string postId)
         {
-            int _postId = postId;
+            string _postId = postId;
             commentService.Remove(id.ToString());
-            return RedirectToAction(_postId.ToString(), "Home/FoodDetail");
+            return this.RedirectToAction( _postId, "Home/FoodDetail");
         }
     }
 }
