@@ -93,6 +93,28 @@ namespace FoodTime.Controllers
             return this.RedirectToAction("Index");
 
         }
+        public async Task<IActionResult> PlusQuantity(string id)
+        {
+            var user = await userManager.GetUserAsync(User);
+            string email = user.Email;
+            CartMDto temp = cartMService.GetFood(id, email);
+            temp.Quanity += 1;
+            cartMService.Update(temp);
+            return this.RedirectToAction("Index");
+        }
+        public async Task<IActionResult> MinusQuantity(string id)
+        {
+            var user = await userManager.GetUserAsync(User);
+            string email = user.Email;
+            CartMDto temp = cartMService.GetFood(id, email);
+            if (temp.Quanity > 1)
+                temp.Quanity -= 1;
+            else
+                return this.RedirectToAction("Index");
+            cartMService.Update(temp);
+            return this.RedirectToAction("Index");
+        }
+
 
     }
 }

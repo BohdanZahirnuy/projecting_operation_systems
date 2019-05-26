@@ -20,17 +20,23 @@
         @model Cart
         @foreach (var item in Model.Lines)
         {
-            <tr>
-                <td>@item.Food.Name</td>
-                <td>@item.Food.Category</td>
-                <td>@item.Food.Weight</td>
-                <td>@item.Food.Price</td>
-                <td>@item.Food.Componets</td>
-                <td>@item.Quantity</td>
-                <td>
-                    <a class="btn btn-danger" href=@Url.Action( "Remove","Cart", new { id = item.Food.Id})> Видалити</a>
-                </td>
-            </tr>
+        <tr>
+            <td>@item.Food.Name</td>
+            <td>@item.Food.Category</td>
+            <td>@item.Food.Weight</td>
+            <td>@item.Food.Price</td>
+            <td>@item.Food.Componets</td>
+            <td>@item.Quantity</td>
+            <td>
+                <a class="btn btn-danger" href=@Url.Action( "PlusQuantity","Cart", new { id = item.Food.Id})>+</a>
+            </td>
+            <td>
+                <a class="btn btn-danger" href=@Url.Action( "MinusQuantity","Cart", new { id = item.Food.Id})>-</a>
+            </td>
+            <td>
+                <a class="btn btn-danger" href=@Url.Action( "Remove","Cart", new { id = item.Food.Id})> Видалити</a>
+            </td>
+        </tr>
 
 
         }
