@@ -36,9 +36,9 @@ namespace FoodTime.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                food = food.Where(s => s.Name.Contains(searchString)
-                                       || s.Componets.Contains(searchString)
-                                       || s.ExtraInfo.Contains(searchString)).ToList();
+                food = food.Where(s => s.Name.ToLower().Contains(searchString.ToLower())
+                                       || s.Componets.ToLower().Contains(searchString.ToLower())
+                                       || s.ExtraInfo.ToLower().Contains(searchString.ToLower())).ToList();
             }
 
             switch (sortOrder)
