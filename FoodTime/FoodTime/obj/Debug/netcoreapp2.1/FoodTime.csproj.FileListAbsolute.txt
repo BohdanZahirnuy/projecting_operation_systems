@@ -307,3 +307,4 @@ D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razo
 D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Roles\UserList.g.cshtml.cs
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Order.g.cshtml.cs
 C:\Users\Asus\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Order.g.cshtml.cs
+D:\projecting_programming_systems\FoodTime\FoodTime\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Order.g.cshtml.cs
