@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Identity.UI">
-      <HintPath>C:\Users\Zlatilda\.nuget\packages\microsoft.aspnetcore.identity.ui\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Identity.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.identity.ui\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Identity.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
 

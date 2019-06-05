@@ -42,4 +42,3 @@ C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\FoodTime.Data.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\Services.pdb
 C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\obj\Debug\netcoreapp2.1\FoodTime.Test.csproj.CopyComplete
-C:\Users\Bodya Zahirnuy\Documents\GitHub\projecting_programming_systems\FoodTime\FoodTime.Test\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.UI.dll
